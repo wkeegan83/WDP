@@ -3,15 +3,19 @@
 	margin: 0;
 	padding: 0;
 }
-html{
-  background-color: royalblue;
+html {
+	background-color: white;
 }
 body {
 	font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    margin: 0 auto;
-		
+	font-size: 100%;
+	width: 98%;                     /* changed from 800 pixels */
+	max-width: 960px;
+	margin: 0 auto;
+	border: 3px solid #931420;
+	background-color: #fffded;
 }
+
 a:focus, a:hover {
 	font-style: italic;
 }
@@ -35,6 +39,9 @@ header img{
 }
 #nav_menu ul li{
 	float: left;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
 }
 #nav_menu li a{
 	display: block;
