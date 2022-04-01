@@ -1,44 +1,24 @@
-/* styles for the elements */
-* {
-	margin: 0;
-	padding: 0;
-}
-html{
-  background-color: royalblue;
-}
-body {
-	font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    margin: 0 auto;
-		
-}
 a:focus, a:hover {
 	font-style: italic;
 }
-/* styles for the header */
-header img{
-	width: 100%;
-}
 
-/* styles for the nav bar */
-#nav_menu{
-	margin: 0 auto;
-	text-align: center;
+body{
+  max-width: max-content;
 }
+/* the styles for the nav menu */
 #nav_menu ul{
-  float: left;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	position: relative;
-	width: 100%;
+  width: 100%;
 }
 #nav_menu ul li{
 	float: left;
 }
 #nav_menu li a{
 	display: block;
-	width: 200px;
+	width: 160px;
 	text-align: center;
 	padding: 1em 0 1em 0;
 	text-decoration: none;
@@ -59,7 +39,6 @@ header img{
 }
 #nav_menu ul li:hover > ul{
 	display: block;
-	text-align: center;
 }
 #nav_menu > ul::after{
 	content: "";
