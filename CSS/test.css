@@ -3,7 +3,10 @@ a:focus, a:hover {
 }
 
 body{
-  max-width: max-content;
+  max-width: 100%;
+}
+img{
+	max-width: 100%;
 }
 /* the styles for the nav menu */
 #nav_menu ul{
@@ -11,15 +14,18 @@ body{
 	margin: 0;
 	padding: 0;
 	position: relative;
-  width: 100%;
+  max-width: 100%;
+	/*display: inline;*/
 }
 #nav_menu ul li{
-	float: left;
+	display: inline;
+	width: 20%;
+	max-width: 100%;
 }
 #nav_menu li a{
-	display: block;
-	width: 160px;
-	text-align: center;
+	/*display: inline;*/
+	width: 100%;
+	/*text-align: center;*/
 	padding: 1em 0 1em 0;
 	text-decoration: none;
 	background-color: gray;
