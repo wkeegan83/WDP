@@ -7,7 +7,15 @@
   <title>WDP Draft</title>
   <link rel="shortcut icon" href="/Images/umb_logo.jpg">
   <link rel="stylesheet" href="/CSS/normalize.css">
-	<link rel="stylesheet" href="/CSS/styles.css">
+	<link rel="stylesheet" href="/CSS/secondary.css">
+	<link rel="stylesheet" href="/CSS/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="/js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
 </head>
 
 <header>
@@ -15,6 +23,7 @@
 </header>
 
 <body>
+	<nav id="mobile_menu"></nav>
   <nav id="nav_menu">
 		<ul>
 			<li ><a href="/HTML/home.html">Home</a></li>
@@ -36,6 +45,50 @@
 			</li>
 		</ul>
   </nav>
+	<h1>About your BSIT in the College of Management</h1>
+	<section>
+		<p class="centered">The program is designed to offer paths to highly demanded IT careers <br><br>
+			And designed for high schools graduates and Mass community college students</p>
+		<h2>The program focuses on project-based work so that you are ready for real-life work 
+			environments upon graduating
+		</h2>
+		<p>All students will become familiar with:</p>
+		<ul>
+			<li>Programming</li>
+			<li>Networking</li>
+			<li>Databases</li>
+			<li>Web Technologies</li>
+		</ul>
+		<h2>Core Requirements for your BSIT</h2>
+		<ul>
+			<li>9 Core Knowledge Courses</li>
+			<table>
+				<thead>
+					<th>Corse Course Requirement</th>
+					<th>Course Number(s)</th>
+				</thead>
+				<tr>
+					<td>2 Programming Courses</td>
+					<td>IT 114L, IT115L, IT116, IT117</td>
+				</tr>
+				<tr>
+					<td>5 200-Level Courses</td>
+					<td>IT 230L, IT 240, IT 244, IT 246, IT 285</td>
+				</tr>
+				<tr>
+					<td>Project Management Course</td>
+					<td>IT 425L</td>
+				</tr>
+				<tr>
+					<td>Capstone Course</td>
+					<td>IT 485</td>
+				</tr>
+			</table> <br>
+			<li>4-5 Track Specific Courses</li>
+			<li>3 Professional Electives</li>
+			<li>General Education Requirements</li>
+		</ul>
+	</section>
 </body>
 <footer>
 	<p>&copy; 2022 Group 9</p>

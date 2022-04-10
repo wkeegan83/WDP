@@ -4,7 +4,10 @@
 	padding: 0;
 }
 html {
-	background-color: white;
+	background-color: pink;
+}
+p{
+	text-align: center;
 }
 
 /* the styles for the header */
@@ -26,6 +29,9 @@ header img {
 }
 .shadow {
 	text-shadow: 2px 2px 2px black;
+}
+a:focus, a:hover {
+	font-style: italic;
 }
 
 /* hide the #mobile_menu */
@@ -49,12 +55,12 @@ header img {
     text-align: center;
     padding: 1em 0;
     text-decoration: none;
-    background-color: gray;
-    color: white;
+    background-color: #113F67;
+    color: #F3F9FB;
     font-weight: bold;
 }
 #nav_menu a.current {
-	color: blue;
+	color: #87C0CD;
 }
 #nav_menu ul ul {
     display: none;
@@ -73,9 +79,15 @@ header img {
     clear: both;
     display: block;
 }
+
+/* the styles for the section */
+section{
+	padding: 1em;
+}
 section h1 {
   color: black;
   margin: 0 0 0 155px;
+	padding-bottom: .25em;
   text-align: center;
   width: 70%;
   font-size: 2.60em; }
@@ -86,518 +98,533 @@ body {
     width: 98%;                     /* changed from 800 pixels */
     max-width: 960px;
     margin: 0 auto;
-	border-color: black;
-    background-color: #f7f8fa;
+		border-color: black;
+    background-color: #87C0CD;
 	
 }
 
-	.certificationTiles {
-		margin-left: -1.6%;
-		clear: both;
-		height: auto; }
-	  
-	  .certificationTiles:after {
-		content: " "; }
-	  
-	  .certificationTiles .filters a {
-		border: medium none;
-		border-radius: 10px;
-		color: #fff;
-		display: inline;
-		font-family: Calibri, Arial, Helvetica, sans-serif;
-		font-size: 1.125em;
-		font-weight: bold;
-		padding: 10px 50px;
-		text-align: center;
-		text-decoration: none;
-		text-transform: uppercase;
-		background: #e42518 none repeat scroll 0 0; }
-	  
-	  .certificationTiles .filters a:hover {
-		background: #CD2116;
-		text-decoration: none; }
-	  
-	  .certificationTiles .filters select {
-		width: 290px;
-		margin-bottom: 20px; }
-	  
-	  .certificationTiles .filters {
-		margin-left: 20px;
-		margin-bottom: 40px;
-		padding: 5px; }
-	  
-	  .certificationTiles .certTile {
-		width: 23.4%;
-		height: 325px;
-		float: left;
-		position: relative;
-		border-radius: 10px;
-		font-family: Calibri, Arial, Helvetica, sans-serif;
-		display: inline-block;
-		cursor: pointer;
-		overflow: hidden;
-		margin: 0 0 20px 1.6%;
-		bottom: auto;
-		left: auto;
-		top: auto; }
-	  
-	  .certificationTiles.whyRenew .certTile {
-		width: 31%; }
-	  
-	  .certificationTiles .certTile h3 {
-		text-transform: uppercase;
-		font-size: 1em;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0; }
-	  
-	  .certificationTiles .top {
-		height: 50%; }
-	  
-	  .certificationTiles .certTile .content {
-		height: 50%;
-		background-color: white;
-		position: absolute;
-		bottom: 0;
-		text-align: center;
-		width: 100%; }
-	  
-	  .certificationTiles .certTile h2 {
-		font-size: 1.25em;
-		margin: 50px 0 20px;
-		color: #616e76; }
-	  
-	  .certificationTiles .certTile p {
-		height: 0;
-		opacity: 0;
-		/*IE8*/
-		filter: alpha(opacity=0);
-		zoom: 1; }
-	  
-	  .certificationTiles .certTile .icon {
-		background-color: white;
-		background-position: center center;
-		background-repeat: no-repeat;
-		border-radius: 150px;
-		box-shadow: 2px 0 13px -5px black;
-		height: 150px;
-		left: 0;
-		margin: auto;
-		position: absolute;
-		right: 0;
-		top: 45px;
-		width: 150px;
-		z-index: 1; }
-	  
-	  .certificationTiles .certTile .icon img {
-    border-radius: 50%;
-		bottom: 0;
-		left: 0;
-		margin: auto;
-		opacity: 1;
-		position: absolute;
-		right: 0;
-		top: 0;
-		width: 110px; }
-	  
-	  .certificationTiles .infrastructure h3 {
-		color: #008fc3; }
-	  
-	  .certificationTiles .infrastructure .top {
-		background-color: #008fc3; }
-	  
-	  .certificationTiles .infrastructure.readMore .content {
-		background-color: #008fc3; }
-	  
-	  .certificationTiles .infrastructure a {
-		background-color: #2980b9; }
-	  
-	  .certificationTiles .infrastructure a:hover {
-		background-color: #5499C7; }
-	  
-	  .certificationTiles .professional h3 {
-		color: #008fc3; }
-	  
-	  .certificationTiles .professional .top {
-		background-color: #008fc3; }
-	  
-	  .certificationTiles .professional.readMore .content {
-		background-color: #008fc3; }
-	  
-	  .certificationTiles .professional a {
-		background-color: #2980b9; }
-	  
-	  .certificationTiles .professional a:hover {
-		background-color: #5499C7; }
-	  
-	  .certificationTiles .cybersecurity h3 {
-		color: #e42518; }
-	  
-	  .certificationTiles .cybersecurity .top {
-		background-color: #e42518; }
-	  
-	  .certificationTiles .cybersecurity.readMore .content {
-		background-color: #e42518; }
-	  
-	  .certificationTiles .cybersecurity a {
-		background-color: #B61E13; }
-	  
-	  .certificationTiles .cybersecurity a:hover {
-		background-color: #C54B42; }
-	  
-	  .certificationTiles .additionalprofessional h3 {
-		color: #9c5da1; }
-	  
-	  .certificationTiles .additionalprofessional .top {
-		background-color: #9c5da1; }
-	  
-	  .certificationTiles .additionalprofessional.readMore .content {
-		background-color: #9c5da1; }
-	  
-	  .certificationTiles .additionalprofessional a {
-		background-color: #7D4A81; }
-	  
-	  .certificationTiles .additionalprofessional a:hover {
-		background-color: #976E9A; }
-	  
-	  .certificationTiles .dataanalytics h3 {
-		color: #F26D20; }
-	  
-	  .certificationTiles .dataanalytics .top {
-		background-color: #F26D20; }
-	  
-	  .certificationTiles .dataanalytics.readMore .content {
-		background-color: #F26D20; }
-	  
-	  .certificationTiles .dataanalytics a {
-		background-color: #d6570e; }
-	  
-	  .certificationTiles .dataanalytics a:hover {
-		background-color: #cf733e; }
-	  
-	  .certificationTiles .readMore .top {
-		height: 0; }
-	  
-	  .certificationTiles .readMore .content {
-		bottom: auto;
-		height: 100%;
-		background-color: transparent; }
-	  
-	  .certificationTiles .readMore .icon {
-		z-index: -1; }
-	  
-	  .certificationTiles .readMore p {
-		height: 160px;
-		opacity: 1;
-		/*IE8*/
-		filter: alpha(opacity=100);
-		zoom: 1;
-		/*END*/
-		margin: 0 15px;
-		font-weight: bold;
-		color: #FFFFFF;
-		font-size: .91em; }
-	  
-	  .certificationTiles .readMore h2 {
-		color: white;
-		height: 50px;
-		margin: 40px 0 20px; }
-	  
-	  .certificationTiles .readMore h3 {
-		display: none; }
-	  
-	  .certificationTiles .certTile a {
-		display: none; }
-	  
-	  .certificationTiles .readMore a {
-		display: inline;
-		border-radius: 3px;
-		font-family: Calibri, Arial, Helvetica, sans-serif;
-		color: #FFFFFF;
-		font-size: .91em;
-		font-weight: bold;
-		padding: 6px 10px 6px 10px;
-		text-decoration: none; }
-	  
-	  .certificationTiles .readMore a:hover {
-		text-decoration: none; }
+/* the styles for the tiles */
+.certificationTiles {
+margin-left: -1.6%;
+clear: both;
+height: auto; }
+
+.certificationTiles:after {
+content: " "; }
+
+.certificationTiles .filters a {
+border: medium none;
+border-radius: 10px;
+color: #fff;
+display: inline;
+font-family: Calibri, Arial, Helvetica, sans-serif;
+font-size: 1.125em;
+font-weight: bold;
+padding: 10px 50px;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+background: #e42518 none repeat scroll 0 0; }
+
+.certificationTiles .filters a:hover {
+background: #CD2116;
+text-decoration: none; }
+
+.certificationTiles .filters select {
+width: 290px;
+margin-bottom: 20px; }
+
+.certificationTiles .filters {
+margin-left: 20px;
+margin-bottom: 40px;
+padding: 5px; }
+
+.certificationTiles .certTile {
+width: 23.4%;
+height: 325px;
+float: left;
+position: relative;
+border-radius: 10px;
+font-family: Calibri, Arial, Helvetica, sans-serif;
+display: inline-block;
+cursor: pointer;
+overflow: hidden;
+margin: 0 0 20px 1.6%;
+bottom: auto;
+left: auto;
+top: auto; }
+
+.certificationTiles.whyRenew .certTile {
+width: 31%; }
+
+.certificationTiles .certTile h3 {
+text-transform: uppercase;
+font-size: 1em;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0; }
+
+.certificationTiles .top {
+height: 50%; }
+
+.certificationTiles .certTile .content {
+height: 50%;
+background-color: white;
+position: absolute;
+bottom: 0;
+text-align: center;
+width: 100%; }
+
+.certificationTiles .certTile h2 {
+font-size: 1.25em;
+margin: 50px 0 20px;
+color: #616e76; }
+
+.certificationTiles .certTile p {
+height: 0;
+opacity: 0;
+/*IE8*/
+filter: alpha(opacity=0);
+zoom: 1; }
+
+.certificationTiles .certTile .icon {
+background-color: white;
+background-position: center center;
+background-repeat: no-repeat;
+border-radius: 150px;
+box-shadow: 2px 0 13px -5px black;
+height: 150px;
+left: 0;
+margin: auto;
+position: absolute;
+right: 0;
+top: 45px;
+width: 150px;
+z-index: 1; }
+
+.certificationTiles .certTile .icon img {
+border-radius: 50%;
+bottom: 0;
+left: 0;
+margin: auto;
+opacity: 1;
+position: absolute;
+right: 0;
+top: 0;
+width: 110px; }
+
+.certificationTiles .infrastructure h3 {
+color: #226597; }
+
+.certificationTiles .infrastructure .top {
+background-color: #226597; }
+
+.certificationTiles .infrastructure.readMore .content {
+background-color: #226597; }
+
+.certificationTiles .infrastructure a {
+background-color: #2980b9; }
+
+.certificationTiles .infrastructure a:hover {
+background-color: #5499C7; }
+
+.certificationTiles .professional h3 {
+color: #008fc3; }
+
+.certificationTiles .professional .top {
+background-color: #008fc3; }
+
+.certificationTiles .professional.readMore .content {
+background-color: #008fc3; }
+
+.certificationTiles .professional a {
+background-color: #2980b9; }
+
+.certificationTiles .professional a:hover {
+background-color: #5499C7; }
+
+.certificationTiles .cybersecurity h3 {
+color: #e42518; }
+
+.certificationTiles .cybersecurity .top {
+background-color: #e42518; }
+
+.certificationTiles .cybersecurity.readMore .content {
+background-color: #e42518; }
+
+.certificationTiles .cybersecurity a {
+background-color: #B61E13; }
+
+.certificationTiles .cybersecurity a:hover {
+background-color: #C54B42; }
+
+.certificationTiles .additionalprofessional h3 {
+color: #9c5da1; }
+
+.certificationTiles .additionalprofessional .top {
+background-color: #9c5da1; }
+
+.certificationTiles .additionalprofessional.readMore .content {
+background-color: #9c5da1; }
+
+.certificationTiles .additionalprofessional a {
+background-color: #7D4A81; }
+
+.certificationTiles .additionalprofessional a:hover {
+background-color: #976E9A; }
+
+.certificationTiles .dataanalytics h3 {
+color: #F26D20; }
+
+.certificationTiles .dataanalytics .top {
+background-color: #F26D20; }
+
+.certificationTiles .dataanalytics.readMore .content {
+background-color: #F26D20; }
+
+.certificationTiles .dataanalytics a {
+background-color: #d6570e; }
+
+.certificationTiles .dataanalytics a:hover {
+background-color: #cf733e; }
+
+.certificationTiles .readMore .top {
+height: 0; }
+
+.certificationTiles .readMore .content {
+bottom: auto;
+height: 100%;
+background-color: transparent; }
+
+.certificationTiles .readMore .icon {
+z-index: -1; }
+
+.certificationTiles .readMore p {
+height: 160px;
+opacity: 1;
+/*IE8*/
+filter: alpha(opacity=100);
+zoom: 1;
+/*END*/
+margin: 0 15px;
+font-weight: bold;
+color: #FFFFFF;
+font-size: .91em; }
+
+.certificationTiles .readMore h2 {
+color: white;
+height: 50px;
+margin: 40px 0 20px; }
+
+.certificationTiles .readMore h3 {
+display: none; }
+
+.certificationTiles .certTile a {
+display: none; }
+
+.certificationTiles .readMore a {
+display: inline;
+border-radius: 3px;
+font-family: Calibri, Arial, Helvetica, sans-serif;
+color: #FFFFFF;
+font-size: .91em;
+font-weight: bold;
+padding: 6px 10px 6px 10px;
+text-decoration: none; }
+
+.certificationTiles .readMore a:hover {
+text-decoration: none; }
 
 
-		.careerRoadMap {
-			position: relative; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles {
-			margin-left: -1.6%;
-			clear: both;
-			height: auto;
-			padding-top: 50px; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles:after {
-			content: " "; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .roadMapCertTile {
-			width: 23.4%;
-			height: 340px;
-			float: left;
-			position: relative;
-			border-radius: 10px;
-			display: inline-block;
-			cursor: pointer;
-			overflow: hidden;
-			margin: 0 0 20px 1.6%;
-			position: relative; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .roadMapCertTile h3 {
-			text-transform: uppercase;
-			font-size: 1em;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .top {
-			height: 50%; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .roadMapCertTile .content {
-			height: 50%;
-			background-color: white;
-			position: absolute;
-			bottom: 0;
-			text-align: center;
-			width: 100%; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .roadMapCertTile h2 {
-			font-size: 1.15em;
-			margin: 50px 0 20px;
-			color: #616e76;
-			padding: 0 7px; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .roadMapCertTile p {
-			height: 0;
-			opacity: 0;
-			/*IE8*/
-			filter: alpha(opacity=0);
-			zoom: 1; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .roadMapCertTile .icon {
-			background-color: white;
-			background-position: center center;
-			background-repeat: no-repeat;
-			border-radius: 150px;
-			box-shadow: 2px 0 13px -5px black;
-			height: 150px;
-			left: 0;
-			margin: auto;
-			position: absolute;
-			right: 0;
-			top: 45px;
-			width: 150px;
-			z-index: 1; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .roadMapCertTile .icon img {
-			bottom: 0;
-			left: 0;
-			margin: auto;
-			opacity: 1;
-			position: absolute;
-			right: 0;
-			top: 0;
-			width: auto; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .beginner h3 {
-			color: #f5a81c; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .beginner .top {
-			background-color: #f5a81c; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .beginner.readMore .content {
-			background-color: #f5a81c; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .beginner a {
-			background-color: #F7B949; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .beginner a:hover {
-			background-color: #C48616; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .intermediate h3 {
-			color: #61a609; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .intermediate .top {
-			background-color: #61a609; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .intermediate.readMore .content {
-			background-color: #61a609; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .intermediate a {
-			background-color: #4E8507; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .intermediate a:hover {
-			background-color: #81B83A; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .advanced h3 {
-			color: #0090b8; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .advanced .top {
-			background-color: #0090b8; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .advanced.readMore .content {
-			background-color: #0090b8; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .advanced a {
-			background-color: #007393; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .advanced a:hover {
-			background-color: #33A6C6; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .expert h3 {
-			color: #f16c22; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .expert .top {
-			background-color: #f16c22; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .expert.readMore .content {
-			background-color: #f16c22; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .expert a {
-			background-color: #C1561B; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .expert a:hover {
-			background-color: #F4894E; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .readMore .top {
-			height: 0; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .readMore .content {
-			bottom: auto;
-			height: 100%;
-			background-color: transparent; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .readMore .icon {
-			z-index: -1; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .readMore p {
-			height: 180px;
-			opacity: 1;
-			/*IE8*/
-			filter: alpha(opacity=100);
-			zoom: 1;
-			/*END*/
-			margin: 0 15px;
-			font-size: .91em;
-			font-weight: bold;
-			color: #ffffff; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .readMore h2 {
-			color: white;
-			margin: 15px 0 15px;
-			padding: 0 5px; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .readMore h3 {
-			display: none; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .roadMapCertTile a {
-			display: none; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .readMore a {
-			border-radius: 3px;
-			bottom: 10px;
-			color: #ffffff;
-			display: inline;
-			font-family: Arial;
-			font-size: 0.91em;
-			font-weight: bold;
-			left: 0;
-			padding: 6px 8px;
-			position: absolute;
-			right: 0;
-			text-decoration: none;
-			margin-left: auto;
-			margin-right: auto;
-			width: 150px; }
-		  
-		  .careerRoadMap .roadMapCertificationTiles .readMore a:hover {
-			text-decoration: none; }
-		  
-		  @media screen and (max-width: 1155px) {
-			.careerRoadMap .roadMapCertificationTiles .roadMapCertTile {
-			  width: 31.73%; } }
-		  
-		  @media screen and (max-width: 797px) {
-			.careerRoadMap .roadMapCertificationTiles .roadMapCertTile {
-			  width: 48.4%; } }
-		  
-		  @media screen and (max-width: 768px) {
-			.careerRoadMap .roadMapCertificationTiles .roadMapCertTile {
-			  width: 48.4%; } }
-		  
-		  @media screen and (max-width: 500px) {
-			.careerRoadMap .roadMapCertificationTiles {
-			  margin-left: 0; }
-			.careerRoadMap .roadMapCertificationTiles .roadMapCertTile {
-			  width: 98%;
-			  cursor: default;
-			  height: auto;
-			  margin-left: 0;
-			  padding: 1%; }
-			.careerRoadMap .roadMapCertificationTiles .roadMapCertTile a {
-			  display: block;
-			  text-align: center;
-			  border-radius: 3px;
-			  font-family: Arial;
-			  color: #ffffff;
-			  font-size: 1em;
-			  font-weight: bold;
-			  padding: 10px 10px;
-			  text-decoration: none;
-			  margin-bottom: 20px;
-			  position: relative;
-			  bottom: auto;
-			  left: auto;
-			  width: auto; }
-			.careerRoadMap .roadMapCertificationTiles .roadMapCertTile .icon {
-			  display: none;
-			  z-index: -1; }
-			.careerRoadMap .roadMapCertificationTiles .beginner .content {
-			  background-color: #f5a81c; }
-			.careerRoadMap .roadMapCertificationTiles .roadMapCertTile.beginner {
-			  background-color: #f5a81c; }
-			.careerRoadMap .roadMapCertificationTiles .intermediate .content {
-			  background-color: #61a609; }
-			.careerRoadMap .roadMapCertificationTiles .roadMapCertTile.intermediate {
-			  background-color: #61a609; }
-			.careerRoadMap .roadMapCertificationTiles .advanced .content {
-			  background-color: #0090b8; }
-			.careerRoadMap .roadMapCertificationTiles .roadMapCertTile.advanced {
-			  background-color: #0090b8; }
-			.careerRoadMap .roadMapCertificationTiles .expert .content {
-			  background-color: #f16c22; }
-			.careerRoadMap .roadMapCertificationTiles .roadMapCertTile.expert {
-			  background-color: #f16c22; }
-			.careerRoadMap .roadMapCertificationTiles .roadMapCertTile .content {
-			  text-align: left;
-			  height: auto;
-			  overflow: auto;
-			  position: relative; }
-			.careerRoadMap .roadMapCertificationTiles .roadMapCertTile h3 {
-			  color: #FFF;
-			  position: absolute;
-			  top: 20px;
-			  display: inline-table; }
-			.careerRoadMap .roadMapCertificationTiles .roadMapCertTile h2 {
-			  color: #616e76;
-			  font-size: 1.25em;
-			  margin: 70px 0 15px;
-			  padding: 0;
-			  height: auto;
-			  color: #FFF; }
-			.careerRoadMap .roadMapCertificationTiles .roadMapCertTile p,
-			.careerRoadMap .roadMapCertificationTiles .readMore p {
-			  height: 100%;
-			  opacity: 1;
-			  color: #FFF;
-			  padding: 0;
-			  margin: 0 0 20px; } }
-		  
-		  .careerRoadMap .video-js {
-			height: 316px; }
+.careerRoadMap {
+position: relative; }
+
+.careerRoadMap .roadMapCertificationTiles {
+margin-left: -1.6%;
+clear: both;
+height: auto;
+padding-top: 50px; }
+
+.careerRoadMap .roadMapCertificationTiles:after {
+content: " "; }
+
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile {
+width: 23.4%;
+height: 340px;
+float: left;
+position: relative;
+border-radius: 10px;
+display: inline-block;
+cursor: pointer;
+overflow: hidden;
+margin: 0 0 20px 1.6%;
+position: relative; }
+
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile h3 {
+text-transform: uppercase;
+font-size: 1em;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0; }
+
+.careerRoadMap .roadMapCertificationTiles .top {
+height: 50%; }
+
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile .content {
+height: 50%;
+background-color: white;
+position: absolute;
+bottom: 0;
+text-align: center;
+width: 100%; }
+
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile h2 {
+font-size: 1.15em;
+margin: 50px 0 20px;
+color: #616e76;
+padding: 0 7px; }
+
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile p {
+height: 0;
+opacity: 0;
+/*IE8*/
+filter: alpha(opacity=0);
+zoom: 1; }
+
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile .icon {
+background-color: white;
+background-position: center center;
+background-repeat: no-repeat;
+border-radius: 150px;
+box-shadow: 2px 0 13px -5px black;
+height: 150px;
+left: 0;
+margin: auto;
+position: absolute;
+right: 0;
+top: 45px;
+width: 150px;
+z-index: 1; }
+
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile .icon img {
+bottom: 0;
+left: 0;
+margin: auto;
+opacity: 1;
+position: absolute;
+right: 0;
+top: 0;
+width: auto; }
+
+.careerRoadMap .roadMapCertificationTiles .beginner h3 {
+color: #f5a81c; }
+
+.careerRoadMap .roadMapCertificationTiles .beginner .top {
+background-color: #f5a81c; }
+
+.careerRoadMap .roadMapCertificationTiles .beginner.readMore .content {
+background-color: #f5a81c; }
+
+.careerRoadMap .roadMapCertificationTiles .beginner a {
+background-color: #F7B949; }
+
+.careerRoadMap .roadMapCertificationTiles .beginner a:hover {
+background-color: #C48616; }
+
+.careerRoadMap .roadMapCertificationTiles .intermediate h3 {
+color: #61a609; }
+
+.careerRoadMap .roadMapCertificationTiles .intermediate .top {
+background-color: #61a609; }
+
+.careerRoadMap .roadMapCertificationTiles .intermediate.readMore .content {
+background-color: #61a609; }
+
+.careerRoadMap .roadMapCertificationTiles .intermediate a {
+background-color: #4E8507; }
+
+.careerRoadMap .roadMapCertificationTiles .intermediate a:hover {
+background-color: #81B83A; }
+
+.careerRoadMap .roadMapCertificationTiles .advanced h3 {
+color: #0090b8; }
+
+.careerRoadMap .roadMapCertificationTiles .advanced .top {
+background-color: #0090b8; }
+
+.careerRoadMap .roadMapCertificationTiles .advanced.readMore .content {
+background-color: #0090b8; }
+
+.careerRoadMap .roadMapCertificationTiles .advanced a {
+background-color: #007393; }
+
+.careerRoadMap .roadMapCertificationTiles .advanced a:hover {
+background-color: #33A6C6; }
+
+.careerRoadMap .roadMapCertificationTiles .expert h3 {
+color: #f16c22; }
+
+.careerRoadMap .roadMapCertificationTiles .expert .top {
+background-color: #f16c22; }
+
+.careerRoadMap .roadMapCertificationTiles .expert.readMore .content {
+background-color: #f16c22; }
+
+.careerRoadMap .roadMapCertificationTiles .expert a {
+background-color: #C1561B; }
+
+.careerRoadMap .roadMapCertificationTiles .expert a:hover {
+background-color: #F4894E; }
+
+.careerRoadMap .roadMapCertificationTiles .readMore .top {
+height: 0; }
+
+.careerRoadMap .roadMapCertificationTiles .readMore .content {
+bottom: auto;
+height: 100%;
+background-color: transparent; }
+
+.careerRoadMap .roadMapCertificationTiles .readMore .icon {
+z-index: -1; }
+
+.careerRoadMap .roadMapCertificationTiles .readMore p {
+height: 180px;
+opacity: 1;
+/*IE8*/
+filter: alpha(opacity=100);
+zoom: 1;
+/*END*/
+margin: 0 15px;
+font-size: .91em;
+font-weight: bold;
+color: #ffffff; }
+
+.careerRoadMap .roadMapCertificationTiles .readMore h2 {
+color: white;
+margin: 15px 0 15px;
+padding: 0 5px; }
+
+.careerRoadMap .roadMapCertificationTiles .readMore h3 {
+display: none; }
+
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile a {
+display: none; }
+
+.careerRoadMap .roadMapCertificationTiles .readMore a {
+border-radius: 3px;
+bottom: 10px;
+color: #ffffff;
+display: inline;
+font-family: Arial;
+font-size: 0.91em;
+font-weight: bold;
+left: 0;
+padding: 6px 8px;
+position: absolute;
+right: 0;
+text-decoration: none;
+margin-left: auto;
+margin-right: auto;
+width: 150px; }
+
+.careerRoadMap .roadMapCertificationTiles .readMore a:hover {
+text-decoration: none; }
+
+/* the styles for media queries */
+@media screen and (max-width: 1155px) {
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile {
+width: 31.73%; } }
+
+@media screen and (max-width: 797px) {
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile {
+width: 48.4%; } }
+
+@media screen and (max-width: 768px) {
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile {
+width: 48.4%; } }
+
+@media screen and (max-width: 500px) {
+.careerRoadMap .roadMapCertificationTiles {
+margin-left: 0; }
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile {
+width: 98%;
+cursor: default;
+height: auto;
+margin-left: 0;
+padding: 1%; }
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile a {
+display: block;
+text-align: center;
+border-radius: 3px;
+font-family: Arial;
+color: #ffffff;
+font-size: 1em;
+font-weight: bold;
+padding: 10px 10px;
+text-decoration: none;
+margin-bottom: 20px;
+position: relative;
+bottom: auto;
+left: auto;
+width: auto; }
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile .icon {
+display: none;
+z-index: -1; }
+.careerRoadMap .roadMapCertificationTiles .beginner .content {
+background-color: #f5a81c; }
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile.beginner {
+background-color: #f5a81c; }
+.careerRoadMap .roadMapCertificationTiles .intermediate .content {
+background-color: #61a609; }
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile.intermediate {
+background-color: #61a609; }
+.careerRoadMap .roadMapCertificationTiles .advanced .content {
+background-color: #0090b8; }
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile.advanced {
+background-color: #0090b8; }
+.careerRoadMap .roadMapCertificationTiles .expert .content {
+background-color: #f16c22; }
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile.expert {
+background-color: #f16c22; }
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile .content {
+text-align: left;
+height: auto;
+overflow: auto;
+position: relative; }
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile h3 {
+color: #FFF;
+position: absolute;
+top: 20px;
+display: inline-table; }
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile h2 {
+color: #616e76;
+font-size: 1.25em;
+margin: 70px 0 15px;
+padding: 0;
+height: auto;
+color: #FFF; }
+.careerRoadMap .roadMapCertificationTiles .roadMapCertTile p,
+.careerRoadMap .roadMapCertificationTiles .readMore p {
+height: 100%;
+opacity: 1;
+color: #FFF;
+padding: 0;
+margin: 0 0 20px; } }
+
+.careerRoadMap .video-js {
+height: 316px; }
+
+/* the styles for the footer */
+footer {
+	background-color: #87C0CD;
+  color: #F3F9FB;
+	clear: both;
+
+}
+footer p {
+	text-align: center;
+	color: #F3F9FB;
+	padding: .5em 0;
+}
