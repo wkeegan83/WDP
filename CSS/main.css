@@ -22,6 +22,7 @@ header h2 {
 header h3 {
 	font-size: 130%;
 	font-style: italic;
+	text-align: center;
 }
 header img {
 	float: left;
@@ -81,34 +82,125 @@ a:focus, a:hover {
 }
 
 /* the styles for the section */
-section{
-	padding: 1em;
-}
 section h1 {
-  color: black;
-  margin: 0 0 0 155px;
-	padding-bottom: .25em;
-  text-align: center;
-  width: 70%;
-  font-size: 2.60em; }
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 100%;                     /* changed from 800 pixels */
+    max-width: 960px;
+	border-color: black;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 0;
+    font-weight: 700;
+    line-height: 24px;
+	text-align: center;
+	margin: auto;
+}
+section p{
+	font-size: 24px;
+    letter-spacing: .3px;
+    line-height: 1.45;
+	text-align: center;
+}
+section h2 {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 100%;                     /* changed from 800 pixels */
+    max-width: 960px;
+	border-color: black;
+    background-color: white;
+}
+.column {
+	-webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #232323;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    background: #f2f2f2;
+}
+
+.callout-text {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #005799;
+    font-style: italic;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'crimsonitalic', "Times New Roman", serif;
+    line-height: 1.2em;
+	align-items: center;
+}
+
+.disclaimer {
+		font-size: 11px;
+		color: #666;
+		margin: 20px 0 0;
+		text-align: center;
+		align-items: center;
+}
+
+
+.content-box {
+    padding: 15px;
+	float: left;
+}
+
+
+.white-box {
+    background: #87C0CD;;
+    box-shadow: 0 5px 8px rgb(0 0 0 / 25%);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+	float: left;
+}
+.three-column{text-align:center;-webkit-flex-wrap:wrap;-moz-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:stretch;-ms-flex-align:stretch;-webkit-align-items:stretch;-moz-align-items:stretch;align-items:stretch}
+@media only screen and (max-width:1140px){.three-column{-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;-moz-justify-content:center;justify-content:center}
+.three-column .column{margin-top:20px}
+
+}
+@media only screen and (min-width:801px){.three-column .column{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-align:stretch;-ms-flex-align:stretch;-webkit-align-items:stretch;-moz-align-items:stretch;align-items:stretch}
+.three-column .content-box{width:100%;display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
+.three-column .button{margin-top:auto}
+}
+@media only screen and (max-width:800px){.three-column{-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
+.three-column .content-box{position:relative}
+}
+.three-column h3{font-size:24px;font-weight:200;margin:0}
+.three-column h4{font-size:48px;font-weight:200;color:#0070a8}
+.three-column p{font-size:20px;font-weight:200}
+.three-column.degree-column h3{font-size:24px;font-weight:200;color:#4c4e51;margin:0}
+@media only screen and (max-width:1140px){.three-column.degree-column h3{font-size:20px}
+}
+.three-column.degree-column h4{font-size:56px;font-weight:200;margin-bottom:15px}
+@media only screen and (max-width:1140px){.three-column.degree-column h4{font-size:46px}
+}
+.three-column.degree-column h4 span{font-size:42px}
+@media only screen and (max-width:1140px){.three-column.degree-column h4 span{font-size:32px}
+}
+.three-column.degree-column p{font-size:14px}
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     width: 98%;                     /* changed from 800 pixels */
-    max-width: 960px;
+    max-width: 980px;
     margin: 0 auto;
-		border-color: black;
-    background-color: #87C0CD;
-	
+	border-color: black;
+    background-color: white;
 }
 
 /* the styles for the tiles */
 .certificationTiles {
 margin-left: -1.6%;
+margin-top: 3%;
 clear: both;
-height: auto; }
-
+height: auto; 
+}
 .certificationTiles:after {
 content: " "; }
 
@@ -229,66 +321,6 @@ background-color: #2980b9; }
 .certificationTiles .infrastructure a:hover {
 background-color: #5499C7; }
 
-.certificationTiles .professional h3 {
-color: #008fc3; }
-
-.certificationTiles .professional .top {
-background-color: #008fc3; }
-
-.certificationTiles .professional.readMore .content {
-background-color: #008fc3; }
-
-.certificationTiles .professional a {
-background-color: #2980b9; }
-
-.certificationTiles .professional a:hover {
-background-color: #5499C7; }
-
-.certificationTiles .cybersecurity h3 {
-color: #e42518; }
-
-.certificationTiles .cybersecurity .top {
-background-color: #e42518; }
-
-.certificationTiles .cybersecurity.readMore .content {
-background-color: #e42518; }
-
-.certificationTiles .cybersecurity a {
-background-color: #B61E13; }
-
-.certificationTiles .cybersecurity a:hover {
-background-color: #C54B42; }
-
-.certificationTiles .additionalprofessional h3 {
-color: #9c5da1; }
-
-.certificationTiles .additionalprofessional .top {
-background-color: #9c5da1; }
-
-.certificationTiles .additionalprofessional.readMore .content {
-background-color: #9c5da1; }
-
-.certificationTiles .additionalprofessional a {
-background-color: #7D4A81; }
-
-.certificationTiles .additionalprofessional a:hover {
-background-color: #976E9A; }
-
-.certificationTiles .dataanalytics h3 {
-color: #F26D20; }
-
-.certificationTiles .dataanalytics .top {
-background-color: #F26D20; }
-
-.certificationTiles .dataanalytics.readMore .content {
-background-color: #F26D20; }
-
-.certificationTiles .dataanalytics a {
-background-color: #d6570e; }
-
-.certificationTiles .dataanalytics a:hover {
-background-color: #cf733e; }
-
 .certificationTiles .readMore .top {
 height: 0; }
 
@@ -336,285 +368,6 @@ text-decoration: none; }
 .certificationTiles .readMore a:hover {
 text-decoration: none; }
 
-
-.careerRoadMap {
-position: relative; }
-
-.careerRoadMap .roadMapCertificationTiles {
-margin-left: -1.6%;
-clear: both;
-height: auto;
-padding-top: 50px; }
-
-.careerRoadMap .roadMapCertificationTiles:after {
-content: " "; }
-
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile {
-width: 23.4%;
-height: 340px;
-float: left;
-position: relative;
-border-radius: 10px;
-display: inline-block;
-cursor: pointer;
-overflow: hidden;
-margin: 0 0 20px 1.6%;
-position: relative; }
-
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile h3 {
-text-transform: uppercase;
-font-size: 1em;
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0; }
-
-.careerRoadMap .roadMapCertificationTiles .top {
-height: 50%; }
-
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile .content {
-height: 50%;
-background-color: white;
-position: absolute;
-bottom: 0;
-text-align: center;
-width: 100%; }
-
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile h2 {
-font-size: 1.15em;
-margin: 50px 0 20px;
-color: #616e76;
-padding: 0 7px; }
-
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile p {
-height: 0;
-opacity: 0;
-/*IE8*/
-filter: alpha(opacity=0);
-zoom: 1; }
-
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile .icon {
-background-color: white;
-background-position: center center;
-background-repeat: no-repeat;
-border-radius: 150px;
-box-shadow: 2px 0 13px -5px black;
-height: 150px;
-left: 0;
-margin: auto;
-position: absolute;
-right: 0;
-top: 45px;
-width: 150px;
-z-index: 1; }
-
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile .icon img {
-bottom: 0;
-left: 0;
-margin: auto;
-opacity: 1;
-position: absolute;
-right: 0;
-top: 0;
-width: auto; }
-
-.careerRoadMap .roadMapCertificationTiles .beginner h3 {
-color: #f5a81c; }
-
-.careerRoadMap .roadMapCertificationTiles .beginner .top {
-background-color: #f5a81c; }
-
-.careerRoadMap .roadMapCertificationTiles .beginner.readMore .content {
-background-color: #f5a81c; }
-
-.careerRoadMap .roadMapCertificationTiles .beginner a {
-background-color: #F7B949; }
-
-.careerRoadMap .roadMapCertificationTiles .beginner a:hover {
-background-color: #C48616; }
-
-.careerRoadMap .roadMapCertificationTiles .intermediate h3 {
-color: #61a609; }
-
-.careerRoadMap .roadMapCertificationTiles .intermediate .top {
-background-color: #61a609; }
-
-.careerRoadMap .roadMapCertificationTiles .intermediate.readMore .content {
-background-color: #61a609; }
-
-.careerRoadMap .roadMapCertificationTiles .intermediate a {
-background-color: #4E8507; }
-
-.careerRoadMap .roadMapCertificationTiles .intermediate a:hover {
-background-color: #81B83A; }
-
-.careerRoadMap .roadMapCertificationTiles .advanced h3 {
-color: #0090b8; }
-
-.careerRoadMap .roadMapCertificationTiles .advanced .top {
-background-color: #0090b8; }
-
-.careerRoadMap .roadMapCertificationTiles .advanced.readMore .content {
-background-color: #0090b8; }
-
-.careerRoadMap .roadMapCertificationTiles .advanced a {
-background-color: #007393; }
-
-.careerRoadMap .roadMapCertificationTiles .advanced a:hover {
-background-color: #33A6C6; }
-
-.careerRoadMap .roadMapCertificationTiles .expert h3 {
-color: #f16c22; }
-
-.careerRoadMap .roadMapCertificationTiles .expert .top {
-background-color: #f16c22; }
-
-.careerRoadMap .roadMapCertificationTiles .expert.readMore .content {
-background-color: #f16c22; }
-
-.careerRoadMap .roadMapCertificationTiles .expert a {
-background-color: #C1561B; }
-
-.careerRoadMap .roadMapCertificationTiles .expert a:hover {
-background-color: #F4894E; }
-
-.careerRoadMap .roadMapCertificationTiles .readMore .top {
-height: 0; }
-
-.careerRoadMap .roadMapCertificationTiles .readMore .content {
-bottom: auto;
-height: 100%;
-background-color: transparent; }
-
-.careerRoadMap .roadMapCertificationTiles .readMore .icon {
-z-index: -1; }
-
-.careerRoadMap .roadMapCertificationTiles .readMore p {
-height: 180px;
-opacity: 1;
-/*IE8*/
-filter: alpha(opacity=100);
-zoom: 1;
-/*END*/
-margin: 0 15px;
-font-size: .91em;
-font-weight: bold;
-color: #ffffff; }
-
-.careerRoadMap .roadMapCertificationTiles .readMore h2 {
-color: white;
-margin: 15px 0 15px;
-padding: 0 5px; }
-
-.careerRoadMap .roadMapCertificationTiles .readMore h3 {
-display: none; }
-
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile a {
-display: none; }
-
-.careerRoadMap .roadMapCertificationTiles .readMore a {
-border-radius: 3px;
-bottom: 10px;
-color: #ffffff;
-display: inline;
-font-family: Arial;
-font-size: 0.91em;
-font-weight: bold;
-left: 0;
-padding: 6px 8px;
-position: absolute;
-right: 0;
-text-decoration: none;
-margin-left: auto;
-margin-right: auto;
-width: 150px; }
-
-.careerRoadMap .roadMapCertificationTiles .readMore a:hover {
-text-decoration: none; }
-
-/* the styles for media queries */
-@media screen and (max-width: 1155px) {
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile {
-width: 31.73%; } }
-
-@media screen and (max-width: 797px) {
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile {
-width: 48.4%; } }
-
-@media screen and (max-width: 768px) {
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile {
-width: 48.4%; } }
-
-@media screen and (max-width: 500px) {
-.careerRoadMap .roadMapCertificationTiles {
-margin-left: 0; }
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile {
-width: 98%;
-cursor: default;
-height: auto;
-margin-left: 0;
-padding: 1%; }
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile a {
-display: block;
-text-align: center;
-border-radius: 3px;
-font-family: Arial;
-color: #ffffff;
-font-size: 1em;
-font-weight: bold;
-padding: 10px 10px;
-text-decoration: none;
-margin-bottom: 20px;
-position: relative;
-bottom: auto;
-left: auto;
-width: auto; }
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile .icon {
-display: none;
-z-index: -1; }
-.careerRoadMap .roadMapCertificationTiles .beginner .content {
-background-color: #f5a81c; }
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile.beginner {
-background-color: #f5a81c; }
-.careerRoadMap .roadMapCertificationTiles .intermediate .content {
-background-color: #61a609; }
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile.intermediate {
-background-color: #61a609; }
-.careerRoadMap .roadMapCertificationTiles .advanced .content {
-background-color: #0090b8; }
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile.advanced {
-background-color: #0090b8; }
-.careerRoadMap .roadMapCertificationTiles .expert .content {
-background-color: #f16c22; }
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile.expert {
-background-color: #f16c22; }
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile .content {
-text-align: left;
-height: auto;
-overflow: auto;
-position: relative; }
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile h3 {
-color: #FFF;
-position: absolute;
-top: 20px;
-display: inline-table; }
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile h2 {
-color: #616e76;
-font-size: 1.25em;
-margin: 70px 0 15px;
-padding: 0;
-height: auto;
-color: #FFF; }
-.careerRoadMap .roadMapCertificationTiles .roadMapCertTile p,
-.careerRoadMap .roadMapCertificationTiles .readMore p {
-height: 100%;
-opacity: 1;
-color: #FFF;
-padding: 0;
-margin: 0 0 20px; } }
-
-.careerRoadMap .video-js {
-height: 316px; }
 
 /* the styles for the footer */
 footer {
