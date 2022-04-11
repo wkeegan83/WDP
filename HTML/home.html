@@ -7,7 +7,7 @@
 		<title>Group 9 WDP</title>
 		<link rel="shortcut icon" href="..\Images\umb_logo.jpg">
 		<link rel="stylesheet" href="..\CSS\main.css">
-		<script src="..\JS\min.js"></script>
+		<script src="js/certile.min.js"></script>
 	
 </head>
 
@@ -36,71 +36,185 @@
 	</nav>
 
 	<section>
-		<h1>Get the skills you want and employers need.</h1>
-		<p>The Departments of Management Science and Information Systems (MSIS) at the College of Management (CM) and Computer Science (CS) at the College of Science and Mathematics (CSM) work together to deliver a degree program that addresses the Commonwealth’s and the nation’s information technology (IT) workforce needs.</p>
-	</section>	
+			<h1> Your Career in Information Technology Starts Here </h1>
+			<p>Prepare yourself to meet the rising demand for highly skilled information technology professionals with UMass Boston's Bachelor of Science in Information Technology, College of Management. Offered 100% online or as a mix of online and on-campus courses, this flexible and affordable BSIT@CM program will position you for success in today's increasingly technical and IT-centric world.</p>
+	</section>
 
-	<div class="certificationTiles">
+</div>
+</div>
+<script> type="text/javascript" >
+	 $(document).ready(function() {
+    $(".certTile").click(function(e) {
+        if ($(window).innerWidth() > 500) {
+            if ($(e.target).is("a")) {
+                return;
+            }
+            if ($(this).hasClass("readMore")) {
+                $(this).removeClass("readMore");
+            } else {
+                $(this).addClass("readMore");
+            }
+        }
+    });
+    if ($(window).innerWidth() < 500) {
+        $(".certificationTilesGrid .content a").text("View");
+    }
+    $(window).resize(function() {
+        if ($(window).innerWidth() < 500) {
+            $(".certificationTilesGrid .content a").text("View");
+            setTimeout(function() {
+                $container.isotope();
+            }, 2e3);
+        } else {
+            $(".certificationTilesGrid .content a").text("Click For Details");
+        }
+    });
+    var $container = $(".certificationTilesGrid").isotope({
+        itemSelector: ".certTile",
+        layoutMode: "fitRows"
+    }); </script>
+
+<div class="certificationTiles">
+	<article class="certTile infrastructure network">
+	<div class="top">
+	<div class="icon">
+		<img style="width: 110px" src="..\Images\System.jpg" alt="iconCloudPlus" title="iconCloudPlus" data-displaymode="Original">
+</div>
+</div>
+<div class="content">
+				<h2>System Administration </h2>
+				<p>System Administration (SA) focuses on the deployment and maintenance of computer systems and networks.</p>
+				<h3>Concentration</h3>
+				<a href="/certifications/Cloud">Click For Details</a>
+			</div>
+		</article>
 		<article class="certTile infrastructure network">
-		<div class="top">
-		<div class="icon">
-			<img style="width: 110px" src="..\Images\System.jpg" alt="iconCloudPlus" title="iconCloudPlus" data-displaymode="Original">
+			<div class="top">
+				<div class="icon">
+
+					<img style="width: 110px" src="..\Images\Forensics.jpg" alt="iconCloudPlus" title="iconCloudPlus" data-displaymode="Original">
+
+				</div>
+			</div>
+			<div class="content">
+				<h2>Computer Forensics</h2>
+				<p>Computer Forensics (CF) is a discipline of forensic science that combines elements of law and information technology to collect and analyze data from computer systems, networks, wireless communications, and storage devices in a way that is admissible as evidence in a court of law.</p>
+				<h3>Concentration</h3>
+				<a href="/certifications/Cloud">Click For Details</a>
+			</div>
+		</article>
+		<article class="certTile infrastructure network">
+			<div class="top">
+				<div class="icon">
+
+					<img style="width: 110px" src="..\Images\Business.jpg" alt="iconCloudPlus" title="iconCloudPlus" data-displaymode="Original">
+
+				</div>
+			</div>
+			<div class="content">
+				<h2>Business Intelligence</h2>
+				<p>Business Intelligence (BI) is the technology that companies such as Amazon.com and Google use to take advantage of the enormous amount of data they collect and analyze.</p>
+				<h3>Concentration</h3>
+				<a href="/certifications/Cloud">Click For Details</a>
+			</div>
+		</article>
+		<article class="certTile infrastructure network">
+			<div class="top">
+				<div class="icon">
+
+					<img style="width: 110px" src="..\Images\Architecture.png" alt="iconCloudPlus" title="iconCloudPlus" data-displaymode="Original">
+
+				</div>
+			</div>
+			<div class="content">
+				<h2>Information Architecture</h2>
+				<p>Information Architecture (IA) is the discipline of designing and implementing information systems that support and enable business strategies and operations. </p>
+				<h3>Concentration</h3>
+				<a href="/certifications/Cloud">Click For Details</a>
+			</div>
+		</article>
+			</div>
+
+
+
+<div class="content-component">
+		<div class="box-outline box-outline-grey">
+		<div class="content-component text-component">
+	
+		<header class="section-header title full-width mobile-padding">
+			<h3 class="left-text blue-text small">Benefits of an Information Technology Degree</h3>
+		</header>
 	</div>
+		
+		<div class="content-component">
+	<div class="content-block three-column circle-plus degree-column flex row mobile-padding">
+		<div class="column lg-4 md-6">
+			
+	<div class="content-box large-info-databox white-box">
+		<h3>Average Salary</h3>
+		<h4> <span>$91,000</span></h4>
+		<div class="three-column-detail">
+			<div tabindex="-1" class="large-info-databox-text three-column-focus">
+				<p>The average salary in the information technology field is&nbsp;$91,000 per year. This is $50,000 higher than the national average salary. As technology continues to grow and be in high demand, professionals with the right credentials will continue to see lucrative opportunities<br>
+	</p>
+	
+			</div>
+			
+		</div>
+		<span role="button" aria-label="Read More" aria-expanded="false" class="plus menu-expanded "></span>
 	</div>
-	<div class="content">
-					<h2>System Administration </h2>
-					<p>System Administration (SA) focuses on the deployment and maintenance of computer systems and networks.</p>
-					<h3>Concentration</h3>
-					<a href="/certifications/Cloud">Click For Details</a>
-				</div>
-			</article>
-			<article class="certTile infrastructure network">
-				<div class="top">
-					<div class="icon">
+		</div>
+		<div class="column lg-4 md-6">
+			
+	<div class="content-box large-info-databox white-box">
+		<h3>Job Growth</h3>
+		<h4> <span>11%</span></h4>
+		<div class="three-column-detail">
+			<div tabindex="-1" class="large-info-databox-text three-column-focus">
+				<p>The Bureau of Labor Statistics anticipates that jobs in information technology will grow 11% by the year 2029. Every industry needs information technology professionals to help it run. Businesses big and small, schools, hospitals, government agencies, and more all rely on IT to help them succeed. This means the IT industry will only continue to grow over time.</p>
 	
-						<img style="width: 110px" src="..\Images\Forensics.jpg" alt="iconCloudPlus" title="iconCloudPlus" data-displaymode="Original">
+			</div>
+			
+		</div>
+		<span role="button" aria-label="Read More" aria-expanded="false" class="plus menu-expanded "></span>
+	</div>
+		</div>
+		<div class="column lg-4 md-6">
+			
+	<div class="content-box large-info-databox white-box">
+		<h3>Job Opportunities</h3>
+		<h4> <span>Anywhere</span></h4>
+		<div class="three-column-detail">
+			<div tabindex="-1" class="large-info-databox-text three-column-focus">
+				<p>Any industry, any location. IT jobs are some of the most widespread around the country. Wherever you live or whatever industry you want to work in, there is likely an IT position waiting for you. A degree will ensure you have the credentials and skills that will help you be ready for whatever position is next.</p>
 	
+			</div>
+			
+		</div>
+		<span role="button" aria-label="Read More" aria-expanded="false" class="plus menu-expanded "></span>
+	</div>
+		</div>
+	</div></div>
+
+	<div class="column ">
+		<div class="callout-text">
+		   Employment of computer and <strong>information technology occupations</strong> is projected 
+		   to <strong>grow 13%</strong> from 2016 to 2026, <strong>faster than the average</strong> for all occupations.
+		</div>
+		<div class="disclaimer">
+		   — U.S. Department of Labor, Bureau of Labor Statistics, <em>Occupational Outlook Handbook</em>, 2018
+		</div>
+	</div>
+	
+	<section h2>
+					<h2>Recent Graduates
+					<p>Employers include:</p>
+					<p><img alt="Deloitte" src="https://www.umb.edu/editor_uploads/images/graduate_studies/Deloitte_Logo.png" style="width: 190px; margin-top: 10px; margin-bottom: 10px; height: 84px;">&nbsp; &nbsp; &nbsp;&nbsp;<img alt="Duck Creek Technologies" src="https://www.umb.edu/editor_uploads/images/graduate_studies/Duck_Creek_Technologies_logo.png" style="width: 190px; margin-top: 10px; margin-bottom: 10px; height: 63px;">&nbsp; &nbsp; &nbsp; &nbsp;<img alt="Netsuite" src="https://www.umb.edu/editor_uploads/images/graduate_studies/Netsuite_logo_cropped.png" style="width: 240px; margin-top: 10px; margin-bottom: 10px; height: 66px;"></p>
+					<p><img alt="State Street" src="https://www.umb.edu/editor_uploads/images/graduate_studies/State_Street_logo.jpg" style="width: 200px; margin-top: 10px; margin-bottom: 10px; height: 75px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img alt="Haystick" src="https://www.umb.edu/editor_uploads/images/graduate_studies/Haystick_logo.png" style="width: 190px; margin-top: 25px; margin-bottom: 25px; height: 83px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img alt="Granite" src="https://business.umb.edu/uploads/grad/Granite_Telecommunications_logo_cropped.jpg" style="width: 175px; margin-top: 10px; margin-bottom: 10px; height: 86px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+					<p>You could become a potential employee at one of these companies</p>
+					</h2>
 					</div>
-				</div>
-				<div class="content">
-					<h2>Computer Forensics</h2>
-					<p>Computer Forensics (CF) is a discipline of forensic science that combines elements of law and information technology to collect and analyze data from computer systems, networks, wireless communications, and storage devices in a way that is admissible as evidence in a court of law.</p>
-					<h3>Concentration</h3>
-					<a href="/certifications/Cloud">Click For Details</a>
-				</div>
-			</article>
-			<article class="certTile infrastructure network">
-				<div class="top">
-					<div class="icon">
-	
-						<img style="width: 110px" src="..\Images\Business.jpg" alt="iconCloudPlus" title="iconCloudPlus" data-displaymode="Original">
-	
-					</div>
-				</div>
-				<div class="content">
-					<h2>Business Intelligence</h2>
-					<p>Business Intelligence (BI) is the technology that companies such as Amazon.com and Google use to take advantage of the enormous amount of data they collect and analyze.</p>
-					<h3>Concentration</h3>
-					<a href="/certifications/Cloud">Click For Details</a>
-				</div>
-			</article>
-			<article class="certTile infrastructure network">
-				<div class="top">
-					<div class="icon">
-	
-						<img style="width: 110px" src="..\Images\Architecture.png" alt="iconCloudPlus" title="iconCloudPlus" data-displaymode="Original">
-	
-					</div>
-				</div>
-				<div class="content">
-					<h2>Information Architecture</h2>
-					<p>Information Architecture (IA) is the discipline of designing and implementing information systems that support and enable business strategies and operations. </p>
-					<h3>Concentration</h3>
-					<a href="/certifications/Cloud">Click For Details</a>
-				</div>
-			</article>
-				</div>
-	</aside>
+				</section h2>	
 </main>
 <footer>
 	<p>&copy; 2022 Group 9</p>
