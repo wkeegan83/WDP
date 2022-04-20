@@ -71,15 +71,60 @@ header img {
     display: block;
 }
 
+/* the styles for the main */
+main {
+	padding: .5em 0;
+	/*float: left;*/
+}
+main h1 {
+	padding: .5em 0 .25em 1em;
+	margin: 0;
+	border-bottom: 2px solid #F3F9FB; /* adds the white border below the heading */
+}
+main h2 {
+	color: goldenrod; /* Normal secondary page sections*/
+	font-size: 100%;
+	padding: .5em 0 .25em 1em;
+}
+main p.centered {
+	text-align: center;
+	padding-bottom: .5em;
+}
+main p{
+	padding: .5em 0 .5em 1em;
+}
+main ul {
+	padding: 0 0 .25em 2em;
+	list-style-type: circle;
+}
+main li {
+	padding-bottom: .35em;
+	padding-top: .25em;
+}
+main figure{
+	float: right;
+}
+main table{
+	border: 1px solid black; /* outside border*/
+	border-collapse: collapse;
+}
+main th, main td{
+	border: 1px solid black; /* inside border*/
+	padding: .2em .7em .2em .7em;
+}
+
 /* the styles for the section */
 section {
+	width: 50%;
+	float: left;
 	padding: .5em 0;
-	border-top: 2px solid #F3F9FB; /* adds the white border below the heading */
+	/*float: left;*/
 }
 section h1 {
 	font-size: 150%;
 	color: goldenrod; /* Track page sections */
-	padding: .5em 0 .25em 0;
+	border: none;
+	padding: .5em 1em .25em .5em;
 	margin: 0;
 }
 section h2 {
@@ -101,16 +146,105 @@ section ul {
 section li {
 	padding-bottom: .35em;
 }
+section figure{
+	float: right;
+}
+section table{
+	border: 1px solid black; /* outside border*/
+	border-collapse: collapse;
+	margin-left: 1em;
+}
+section th, section td{
+	border: 1px solid black; /* inside border*/
+	padding: .2em .7em .2em .7em;
+}
+
+/* the styles for the aside */
+aside{
+	float: right;
+}
+aside h1 {
+	font-size: 150%;
+	color: goldenrod; /* Track page sections */
+	border: none;
+	padding: .5em 1em .25em .5em;
+	margin: 0;
+	float: right;
+}aside h2 {
+	color: goldenrod; /* Normal secondary page sections*/
+	font-size: 100%;
+	padding: .5em 0 .25em 1em;
+}
+aside ul {
+	padding: 3em 0 .25em 0em;
+	list-style-type: circle;
+	float: right;
+}
+aside li {
+	padding-bottom: .35em;
+}
 
 /* the styles for the table */
 table{
 	border: 1px solid black; /* outside border*/
 	border-collapse: collapse;
-	
 }
 th, td{
-	border: 1px solid black; /* inside border*/
-	padding: .2em .7em;
+	border: 1px solid pink; /* inside border*/
+	padding: .2em .7em .2em .7em;
+}
+
+/* the styles for the form */
+fieldset {
+	margin-top: 0;
+	margin-bottom: .5em;
+	padding: .5em 1em;
+}
+legend {
+	color: goldenrod;
+	font-weight: bold;
+	font-size: 100%;
+	margin-bottom: .5em;
+}
+label {
+	float: left;
+	width: 12em;
+	text-align: right;
+}
+label, input, select {
+font-size: 90%;
+}
+input, select {
+	width: 15em;
+	margin-left: .5em;
+	margin-bottom: .5em;
+}
+input:required {
+border: 2px solid red;
+color: #800000;
+}
+input:valid {
+border: 1px solid black;
+}
+input:invalid {
+box-shadow: none;
+border: 2px solid red;
+color: #800000;
+}
+br {
+	clear: both;
+}
+#radio label{
+float: none;
+}
+#radio input{
+width: auto;
+margin-left: 3em;
+}
+#buttons input {
+width: 10em;
+background-color: #87C0CD;
+color: black;
 }
 
 /* the styles for the footer */
@@ -118,7 +252,6 @@ footer {
 	background-color: #226597;
   color: white;
 	clear: both;
-
 }
 footer p {
 	text-align: center;

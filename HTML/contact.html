@@ -1,41 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WDP Draft</title>
-  <link rel="shortcut icon" href="/Images/umb_logo.jpg">
-  <link rel="stylesheet" href="/CSS/normalize.css">
-	<link rel="stylesheet" href="/CSS/secondary.css">
+  <link rel="shortcut icon" href="../Images/umb_logo.jpg">
+  <link rel="stylesheet" href="../CSS/normalize.css">
+	<link rel="stylesheet" href="../CSS/secondary.css">
+	<link rel="stylesheet" href="../CSS/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
 </head>
 
 <header>
-  <a href="/HTML/home.html"><img src="/Images/UMass-Boston_aerial.jpg" alt="home"></a>
+	<a href="../HTML/home.html"><img src="../Images/UMass-Boston_aerial.jpg" alt="home"></a>
 </header>
 
 <body>
+	<nav id="mobile_menu"></nav>
   <nav id="nav_menu">
 		<ul>
-			<li ><a href="/HTML/home.html">Home</a></li>
-			<li><a href="/HTML/academics.html">Academics</a>
+			<li ><a href="../HTML/home.html">Home</a></li>
+			<li><a href="../HTML/academics.html">Academics</a>
 					<ul>
-						<li><a href="/HTML/forensics.html">Computer Forensics</a></li>
-						<li><a href="/HTML/businessintel.html">Business Intelligence</a></li>
-						<li><a href="/HTML/sysadmin.html">System Administration</a></li>
-						<li><a href="/HTML/infoarch.html">Information Architecture</a></li>
+						<li><a href="../HTML/forensics.html">Computer Forensics</a></li>
+						<li><a href="../HTML/businessintel.html">Business Intelligence</a></li>
+						<li><a href="../HTML/sysadmin.html">System Administration</a></li>
+						<li><a href="../HTML/infoarch.html">Information Architecture</a></li>
 					</ul>
 	  	</li>
-      <li><a href="/HTML/prospects.html">Prospects</a></li>
-			<li><a href="/HTML/studentexperience.html">Student Experiences</a></li>
-			<li><a href="/HTML/contact.html" class="current">Contact Information</a>
-					<ul>
-						<li><a href="/HTML/contactadmin.html">Contact Administration</a></li>
-						<li><a href="/HTML/contactprof.html">Contact Professors</a></li>
-					</ul>
-			</li>
+      <li><a href="../HTML/prospects.html">Prospects</a></li>
+			<li><a href="../HTML/studentexperience.html">Student Experiences</a></li>
+			<li><a href="../HTML/contact.html" class="current">Contact Information</a></li>
 		</ul>
   </nav>
+	<h1>Contact Us</h1>
+	<main>
+		<form action="register_account.html" method="get"
+        		name="registration_form" id="registration_form">
+    			<fieldset>
+						<legend> Your Contact Information</legend>
+						<label for="email">E-Mail:</label>
+						<input type="email" name="email" id="email" autofocus required><br>
+						<label for="first_name">First Name:</label>
+						<input type="text" name="first_name" id="first_name" required><br>
+						<label for="last_name">Last Name:</label>
+						<input type="text" name="last_name" id="last_name" required><br>
+						<label for="phone">Phone Number:</label>
+						<input type="tel" name="phone" id="phone" placeholder="999-999-9999" 
+											pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-999 format"><br>
+					</fieldset>
+					<fieldset id="buttons">
+						<legend>Submit Your Information</legend>
+						<label>&nbsp;</label>
+						<input type="submit" id="submit" value="Submit">
+						<input type="reset" id="reset" value="Reset Fields"><br>
+					</fieldset>
+				</form>
+		</main>
 </body>
 <footer>
 	<p>&copy; 2022 Group 9</p>

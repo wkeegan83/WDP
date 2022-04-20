@@ -8,6 +8,14 @@
   <link rel="shortcut icon" href="/Images/umb_logo.jpg">
   <link rel="stylesheet" href="/CSS/normalize.css">
 	<link rel="stylesheet" href="/CSS/secondary.css">
+	<link rel="stylesheet" href="/CSS/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="/js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
 </head>
 
 <header>
@@ -15,6 +23,7 @@
 </header>
 
 <body>
+	<nav id="mobile_menu"></nav>
   <nav id="nav_menu">
 		<ul>
 			<li ><a href="/HTML/home.html">Home</a></li>
@@ -28,23 +37,41 @@
 	  	</li>
       <li><a href="/HTML/prospects.html">Prospects</a></li>
 			<li><a href="/HTML/studentexperience.html">Student Experiences</a></li>
-			<li><a href="/HTML/contact.html">Contact Information</a>
-					<ul>
-						<li><a href="/HTML/contactadmin.html">Contact Administration</a></li>
-						<li><a href="/HTML/contactprof.html">Contact Professors</a></li>
-					</ul>
-			</li>
+			<li><a href="/HTML/contact.html">Contact Information</a></li>
 		</ul>
   </nav>
-	<h1>Information Architecture</h1>
-	<section>
-		<h1>Track Overview</h1>
-		<p> 
-		</p>
-		<h1>Salary Information</h1>
-		<p>
-		</p>
-	</section>
+	<main>
+		<h1>Information Architecture</h1>
+		<section>
+			<h1>Track Overview</h1>
+			<p> 
+				Information Architecture (IA) is the discipline of designing and implementing information 
+				systems that support and enable business strategies and operations. The information architecture 
+				track addresses topics covering concepts such as usability (including accessibility, experience 
+				design, interaction design, and user interface design), information design (including information 
+				find ability and content management), component-based design (including web services, services 
+				oriented architecture, process oriented architecture, and cloud computing), and enterprise 
+				systems. As organizations are relying on increasingly more complex information systems to 
+				compete and survive, they are in dire need of IT professionals who understand how to design, 
+				deploy, and manage an efficient IT architecture to support their information systems.
+			</p>
+
+			<h1>Salary Information</h1>
+			<p>
+				Entry Level Salary: $36k to $65k per year <br><br>
+				Average Salary: $93k to $180k per year
+			</p>
+
+			<h1>Track Courses</h1>
+				<h2>Take the following 4 Courses</h2>
+				<ul>
+					<li>IT 360 Enterprise Software</li>
+					<li>IT 428L Information System Security</li>
+					<li>IT 460 Integration Methodologies and Tools</li>
+					<li>IT 461L Systems Analysis and Design</li>
+				</ul>
+		</section>
+	</main>
 </body>
 <footer>
 	<p>&copy; 2022 Group 9</p>

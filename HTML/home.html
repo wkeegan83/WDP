@@ -2,42 +2,86 @@
 <html lang="en">
 
 <head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Group 9 WDP</title>
-		<link rel="shortcut icon" href="..\Images\umb_logo.jpg">
-		<link rel="stylesheet" href="..\CSS\main.css">
-		<script src="js/certile.min.js"></script>
-	
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDP Draft</title>
+  <link rel="shortcut icon" href="../Images/umb_logo.jpg">
+  <link rel="stylesheet" href="../CSS/normalize.css">
+	<link rel="stylesheet" href="../CSS/main.css">
+	<link rel="stylesheet" href="../CSS/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
 </head>
 
 <body>
 	<header>
-		<a href="/HTML/home.html"><img src="..\Images\Banner.jpg" alt="home"></a>
-	</header>
-
+		<a href="../HTML/home.html"><img src="../Images/UMass-Boston_aerial.jpg" alt="home"></a>
+		</header>
+	<nav id="mobile_menu"></nav>
 	<nav id="nav_menu">
 		<ul>
-			<li ><a href="/HTML/home.html" class="current">Home</a></li>
-			<li><a href="/HTML/academics.html">Academics</a>
-				<ul>
-					<li><a href="/HTML/forensics.html">Computer Forensics</a></li>
-					<li><a href="/HTML/businessintel.html">Business Intelligence</a></li>
-					<li><a href="/HTML/sysadmin.html">System Administration</a></li>
-					<li><a href="/HTML/infoarch.html">Information Architecture</a></li>
-				</ul>
-  			<li><a href="/HTML/prospects.html">Prospects</a></li>
-			<li><a href="/HTML/studentexperience.html">Student Experiences</a></li>
-			<li><a href="/HTML/contact.html">Contact Information</a>
-	</nav>
+			<li ><a href="../HTML/home.html" class="current">Home</a></li>
+			<li><a href="../HTML/academics.html">Academics</a>
+					<ul>
+						<li><a href="../HTML/forensics.html">Computer Forensics</a></li>
+						<li><a href="../HTML/businessintel.html">Business Intelligence</a></li>
+						<li><a href="../HTML/sysadmin.html">System Administration</a></li>
+						<li><a href="../HTML/infoarch.html">Information Architecture</a></li>
+					</ul>
+	  	</li>
+      <li><a href="../HTML/prospects.html">Prospects</a></li>
+			<li><a href="../HTML/studentexperience.html">Student Experiences</a></li>
+			<li><a href="../HTML/contact.html">Contact Information</a></li>
+		</ul>
+  </nav>
 
 	<section>
 			<h1> Your Career in Information Technology Starts Here </h1>
 			<p>Prepare yourself to meet the rising demand for highly skilled information technology professionals with UMass Boston's Bachelor of Science in Information Technology, College of Management. Offered 100% online or as a mix of online and on-campus courses, this flexible and affordable BSIT@CM program will position you for success in today's increasingly technical and IT-centric world.</p>
 	</section>
 
+</div>
+</div>
+<script> type="text/javascript" >
+	 $(document).ready(function() {
+    $(".certTile").click(function(e) {
+        if ($(window).innerWidth() > 500) {
+            if ($(e.target).is("a")) {
+                return;
+            }
+            if ($(this).hasClass("readMore")) {
+                $(this).removeClass("readMore");
+            } else {
+                $(this).addClass("readMore");
+            }
+        }
+    });
+    if ($(window).innerWidth() < 500) {
+        $(".certificationTilesGrid .content a").text("View");
+    }
+    $(window).resize(function() {
+        if ($(window).innerWidth() < 500) {
+            $(".certificationTilesGrid .content a").text("View");
+            setTimeout(function() {
+                $container.isotope();
+            }, 2e3);
+        } else {
+            $(".certificationTilesGrid .content a").text("Click For Details");
+        }
+    });
+    var $container = $(".certificationTilesGrid").isotope({
+        itemSelector: ".certTile",
+        layoutMode: "fitRows"
+    }); </script>
+
 <div class="certificationTiles">
-	<article class="certTile background">
+	<article class="certTile infrastructure network">
 	<div class="top">
 	<div class="icon">
 		<img style="width: 110px" src="..\Images\System.jpg" alt="iconCloudPlus" title="iconCloudPlus" data-displaymode="Original">
@@ -47,9 +91,10 @@
 				<h2>System Administration </h2>
 				<p>System Administration (SA) focuses on the deployment and maintenance of computer systems and networks.</p>
 				<h3>Concentration</h3>
+				<a href="/certifications/Cloud">Click For Details</a>
 			</div>
 		</article>
-		<article class="certTile background">
+		<article class="certTile infrastructure network">
 			<div class="top">
 				<div class="icon">
 
@@ -61,9 +106,10 @@
 				<h2>Computer Forensics</h2>
 				<p>Computer Forensics (CF) is a discipline of forensic science that combines elements of law and information technology to collect and analyze data from computer systems, networks, wireless communications, and storage devices in a way that is admissible as evidence in a court of law.</p>
 				<h3>Concentration</h3>
+				<a href="/certifications/Cloud">Click For Details</a>
 			</div>
 		</article>
-		<article class="certTile background">
+		<article class="certTile infrastructure network">
 			<div class="top">
 				<div class="icon">
 
@@ -75,9 +121,10 @@
 				<h2>Business Intelligence</h2>
 				<p>Business Intelligence (BI) is the technology that companies such as Amazon.com and Google use to take advantage of the enormous amount of data they collect and analyze.</p>
 				<h3>Concentration</h3>
+				<a href="/certifications/Cloud">Click For Details</a>
 			</div>
 		</article>
-		<article class="certTile background">
+		<article class="certTile infrastructure network">
 			<div class="top">
 				<div class="icon">
 
@@ -89,45 +136,74 @@
 				<h2>Information Architecture</h2>
 				<p>Information Architecture (IA) is the discipline of designing and implementing information systems that support and enable business strategies and operations. </p>
 				<h3>Concentration</h3>
-
+				<a href="/certifications/Cloud">Click For Details</a>
 			</div>
 		</article>
 			</div>
 
 
 
-<div class="threecolumnsblue">
-	<h3>Benefits of an Information Technology Degree</h3>
-
-	<div class="three-column degree-column">
+<div class="content-component">
+		<div class="box-outline box-outline-grey">
+		<div class="content-component text-component">
+	
+		<header class="section-header title full-width mobile-padding">
+			<h3 class="left-text blue-text small">Benefits of an Information Technology Degree</h3>
+		</header>
+	</div>
 		
-		<div class="column">	
-		<div class="content-box">
+		<div class="content-component">
+	<div class="content-block three-column circle-plus degree-column flex row mobile-padding">
+		<div class="column lg-4 md-6">
+			
+	<div class="content-box large-info-databox white-box">
 		<h3>Average Salary</h3>
 		<h4> <span>$91,000</span></h4>
+		<div class="three-column-detail">
+			<div tabindex="-1" class="large-info-databox-text three-column-focus">
 				<p>The average salary in the information technology field is&nbsp;$91,000 per year. This is $50,000 higher than the national average salary. As technology continues to grow and be in high demand, professionals with the right credentials will continue to see lucrative opportunities<br>
-					</p>
+	</p>
+	
 			</div>
-
-		<div class="column">		
-		<div class="content-box">
-			<h3>Job Growth</h3>
-			<h4> <span>11%</span></h4>
-				<p>The Bureau of Labor Statistics anticipates that jobs in information technology will grow 11% by the year 2029. Every industry needs information technology professionals to help it run. Businesses big and small, schools, hospitals, government agencies, and more all rely on IT to help them succeed. This means the IT industry will only continue to grow over time.</p>
-			</div>
+			
 		</div>
-		
-		<div class="column">	
-		<div class="content-box">
+		<span role="button" aria-label="Read More" aria-expanded="false" class="plus menu-expanded "></span>
+	</div>
+		</div>
+		<div class="column lg-4 md-6">
+			
+	<div class="content-box large-info-databox white-box">
+		<h3>Job Growth</h3>
+		<h4> <span>11%</span></h4>
+		<div class="three-column-detail">
+			<div tabindex="-1" class="large-info-databox-text three-column-focus">
+				<p>The Bureau of Labor Statistics anticipates that jobs in information technology will grow 11% by the year 2029. Every industry needs information technology professionals to help it run. Businesses big and small, schools, hospitals, government agencies, and more all rely on IT to help them succeed. This means the IT industry will only continue to grow over time.</p>
+	
+			</div>
+			
+		</div>
+		<span role="button" aria-label="Read More" aria-expanded="false" class="plus menu-expanded "></span>
+	</div>
+		</div>
+		<div class="column lg-4 md-6">
+			
+	<div class="content-box large-info-databox white-box">
 		<h3>Job Opportunities</h3>
 		<h4> <span>Anywhere</span></h4>
+		<div class="three-column-detail">
+			<div tabindex="-1" class="large-info-databox-text three-column-focus">
 				<p>Any industry, any location. IT jobs are some of the most widespread around the country. Wherever you live or whatever industry you want to work in, there is likely an IT position waiting for you. A degree will ensure you have the credentials and skills that will help you be ready for whatever position is next.</p>
+	
 			</div>
+			
 		</div>
+		<span role="button" aria-label="Read More" aria-expanded="false" class="plus menu-expanded "></span>
 	</div>
+		</div>
+	</div></div>
 
-
-	<div class="callout-text">
+	<div class="column ">
+		<div class="callout-text">
 		   Employment of computer and <strong>information technology occupations</strong> is projected 
 		   to <strong>grow 13%</strong> from 2016 to 2026, <strong>faster than the average</strong> for all occupations.
 		</div>

@@ -1,50 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WDP Draft</title>
-  <link rel="shortcut icon" href="/Images/umb_logo.jpg">
-  <link rel="stylesheet" href="/CSS/normalize.css">
-	<link rel="stylesheet" href="/CSS/secondary.css">
+  <link rel="shortcut icon" href="../Images/umb_logo.jpg">
+  <link rel="stylesheet" href="../CSS/normalize.css">
+	<link rel="stylesheet" href="../CSS/secondary.css">
+	<link rel="stylesheet" href="../CSS/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
 </head>
 
 <header>
-  <a href="/HTML/home.html"><img src="/Images/UMass-Boston_aerial.jpg" alt="home"></a>
+	<a href="../HTML/home.html"><img src="../Images/UMass-Boston_aerial.jpg" alt="home"></a>
 </header>
 
 <body>
+	<nav id="mobile_menu"></nav>
   <nav id="nav_menu">
 		<ul>
-			<li ><a href="/HTML/home.html">Home</a></li>
-			<li><a href="/HTML/academics.html" class="current">Academics</a>
+			<li ><a href="../HTML/home.html">Home</a></li>
+			<li><a href="../HTML/academics.html" class="current">Academics</a>
 					<ul>
-						<li><a href="/HTML/forensics.html">Computer Forensics</a></li>
-						<li><a href="/HTML/businessintel.html">Business Intelligence</a></li>
-						<li><a href="/HTML/sysadmin.html" class="current">System Administration</a></li>
-						<li><a href="/HTML/infoarch.html">Information Architecture</a></li>
+						<li><a href="../HTML/forensics.html">Computer Forensics</a></li>
+						<li><a href="../HTML/businessintel.html">Business Intelligence</a></li>
+						<li><a href="../HTML/sysadmin.html" class="current">System Administration</a></li>
+						<li><a href="../HTML/infoarch.html">Information Architecture</a></li>
 					</ul>
 	  	</li>
-      <li><a href="/HTML/prospects.html">Prospects</a></li>
-			<li><a href="/HTML/studentexperience.html">Student Experiences</a></li>
-			<li><a href="/HTML/contact.html">Contact Information</a>
-					<ul>
-						<li><a href="/HTML/contactadmin.html">Contact Administration</a></li>
-						<li><a href="/HTML/contactprof.html">Contact Professors</a></li>
-					</ul>
-			</li>
+      <li><a href="../HTML/prospects.html">Prospects</a></li>
+			<li><a href="../HTML/studentexperience.html">Student Experiences</a></li>
+			<li><a href="../HTML/contact.html">Contact Information</a></li>
 		</ul>
   </nav>
-	<h1>System Administration</h1>
-	<section>
-		<h1>Track Overview</h1>
-		<p> 
-		</p>
-		<h1>Salary Information</h1>
-		<p>
-		</p>
-	</section>
+	<main>
+		<h1>System Administration</h1>
+		<section>
+			<h1>Track Overview</h1>
+			<p> 
+				System Administration (SA) focuses on the deployment and maintenance of computer systems and 
+				networks. The system administration track concerns issues related to the selection, installation, 
+				configuration and maintenance of Linux- and Windows-based systems (including shell programming 
+				and scripting, heterogeneous systems, remote management, the legal issues of system 
+				administration, as well as the design and implementation of policies and automated 
+				administration regimes) and Internet-working environments. As organizations keep investing in 
+				their information systems, talents are needed to help design, deploy, manage, and safeguard 
+				these systems.
+			</p>
+
+			<h1>Salary Information</h1>
+			<p>
+				Entry Level Salary: $34k to $55k per year <br><br>
+				Average Salary: $18k to $400k per year			
+			</p>
+
+			<h1>Track Courses</h1>
+				<h2>Take the following 4 Courses</h2>
+				<ul>
+					<li>IT 341 Introduction to System Administration</li>
+					<li>IT 441 Network Services Administration</li>
+					<li>IT 442 Windows System Administration</li>
+					<li>IT 443 Network Security Administration</li>
+				</ul>
+		</section>
+</main>
 </body>
 <footer>
 	<p>&copy; 2022 Group 9</p>

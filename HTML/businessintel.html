@@ -1,50 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WDP Draft</title>
-  <link rel="shortcut icon" href="/Images/umb_logo.jpg">
-  <link rel="stylesheet" href="/CSS/normalize.css">
-	<link rel="stylesheet" href="/CSS/secondary.css">
+  <link rel="shortcut icon" href="../Images/umb_logo.jpg">
+  <link rel="stylesheet" href="../CSS/normalize.css">
+	<link rel="stylesheet" href="../CSS/secondary.css">
+	<link rel="stylesheet" href="../CSS/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
 </head>
 
 <header>
-  <a href="/HTML/home.html"><img src="/Images/UMass-Boston_aerial.jpg" alt="home"></a>
+  <a href="../HTML/home.html"><img src="../Images/UMass-Boston_aerial.jpg" alt="home"></a>
 </header>
 
 <body>
+	<nav id="mobile_menu"></nav>
   <nav id="nav_menu">
 		<ul>
-			<li ><a href="/HTML/home.html">Home</a></li>
-			<li><a href="/HTML/academics.html" class="current">Academics</a>
+			<li ><a href="../HTML/home.html">Home</a></li>
+			<li><a href="../HTML/academics.html" class="current">Academics</a>
 					<ul>
-						<li><a href="/HTML/forensics.html">Computer Forensics</a></li>
-						<li><a href="/HTML/businessintel.html" class="current">Business Intelligence</a></li>
-						<li><a href="/HTML/sysadmin.html">System Administration</a></li>
-						<li><a href="/HTML/infoarch.html">Information Architecture</a></li>
+						<li><a href="../HTML/forensics.html">Computer Forensics</a></li>
+						<li><a href="../HTML/businessintel.html" class="current">Business Intelligence</a></li>
+						<li><a href="../HTML/sysadmin.html">System Administration</a></li>
+						<li><a href="../HTML/infoarch.html">Information Architecture</a></li>
 					</ul>
 	  	</li>
-      <li><a href="/HTML/prospects.html">Prospects</a></li>
-			<li><a href="/HTML/studentexperience.html">Student Experiences</a></li>
-			<li><a href="/HTML/contact.html">Contact Information</a>
-					<ul>
-						<li><a href="/HTML/contactadmin.html">Contact Administration</a></li>
-						<li><a href="/HTML/contactprof.html">Contact Professors</a></li>
-					</ul>
-			</li>
+      <li><a href="../HTML/prospects.html">Prospects</a></li>
+			<li><a href="../HTML/studentexperience.html">Student Experiences</a></li>
+			<li><a href="../HTML/contact.html">Contact Information</a></li>
 		</ul>
   </nav>
-	<h1>Business Intelligence</h1>
-	<section>
-		<h1>Track Overview</h1>
-		<p> 
-		</p>
-		<h1>Salary Information</h1>
-		<p>
-		</p>
-	</section>
+	<main>
+		<h1>Business Intelligence</h1>
+		<section>
+			<h1>Track Overview</h1>
+			<p> 
+				Business Intelligence (BI) is the technology that companies such as Amazon.com and Google use 
+				to take advantage of the enormous amount of data they collect and analyze. It is the technology 
+				with which Amazon.com knows what book to recommend you every time you login, Google knows how to 
+				rank the pages you are searching for, and banks decide whether to approve loan applications 
+				almost instantly. As organizations increasingly have to deal with “big data," the number of job 
+				openings and the need for skilled professionals in this field will continue to increase.
+			</p>
+
+			<h1>Salary Information</h1>
+			<p>
+				Entry Level Salary: $38k to $120k per year <br><br>
+				Average Salary: $58k to $130k per year
+			</p>
+
+			<h1>Track Courses</h1>
+			<h2>Take the following 3 Courses</h2>
+			<ul>
+				<li>IT 370 Business Intelligence</li>
+				<li>IT 471 Data Warehousing</li>
+				<li>IT 472 Data Mining</li>
+			</ul>
+			<h2>And 2 courses from this table</h2>
+			<table>
+				<tr>
+					<td>IT 360 Enterprise Software</td>
+					<td>IT 428L Information System Security</td>
+				</tr>
+				<tr>
+					<td> IT 456 Storage Management</td>
+					<td>IT 460 Integration Methodologies and Tools</td>
+				</tr>
+				<tr>
+					<td>IT 461L Systems Analysis and Design</td>
+					<td>MSIS 422 Decision Support Systems</td>
+				</tr>
+				<tr>
+					<td>MSIS 426 E-Business and E-Commerce</td>
+					<td>MSIS 427 Knowledge Management</td>
+				</tr>
+			</table>
+		</section>
+	</main>
 </body>
 <footer>
 	<p>&copy; 2022 Group 9</p>

@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WDP Draft</title>
-  <link rel="shortcut icon" href="/Images/umb_logo.jpg">
-  <link rel="stylesheet" href="/CSS/normalize.css">
-	<link rel="stylesheet" href="/CSS/secondary.css">
+  <link rel="shortcut icon" href="../Images/umb_logo.jpg">
+  <link rel="stylesheet" href="../CSS/normalize.css">
+	<link rel="stylesheet" href="../CSS/secondary.css">
+	<link rel="stylesheet" href="../CSS/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
 </head>
 
 <header>
-  <a href="/HTML/home.html"><img src="/Images/UMass-Boston_aerial.jpg" alt="home"></a>
+	<a href="../HTML/home.html"><img src="../Images/UMass-Boston_aerial.jpg" alt="home"></a>
 </header>
 
 <body>
+	<nav id="mobile_menu"></nav>
   <nav id="nav_menu">
 		<ul>
-			<li ><a href="/HTML/home.html">Home</a></li>
-			<li><a href="/HTML/academics.html" class="current">Academics</a>
+			<li ><a href="../HTML/home.html">Home</a></li>
+			<li><a href="../HTML/academics.html" class="current">Academics</a>
 					<ul>
-						<li><a href="/HTML/forensics.html" class="current">Computer Forensics</a></li>
-						<li><a href="/HTML/businessintel.html">Business Intelligence</a></li>
-						<li><a href="/HTML/sysadmin.html">System Administration</a></li>
-						<li><a href="/HTML/infoarch.html">Information Architecture</a></li>
+						<li><a href="../HTML/forensics.html" class="current">Computer Forensics</a></li>
+						<li><a href="../HTML/businessintel.html">Business Intelligence</a></li>
+						<li><a href="../HTML/sysadmin.html">System Administration</a></li>
+						<li><a href="../HTML/infoarch.html">Information Architecture</a></li>
 					</ul>
 	  	</li>
-      <li><a href="/HTML/prospects.html">Prospects</a></li>
-			<li><a href="/HTML/studentexperience.html">Student Experiences</a></li>
-			<li><a href="/HTML/contact.html">Contact Information</a>
-					<ul>
-						<li><a href="/HTML/contactadmin.html">Contact Administration</a></li>
-						<li><a href="/HTML/contactprof.html">Contact Professors</a></li>
-					</ul>
-			</li>
+      <li><a href="../HTML/prospects.html">Prospects</a></li>
+			<li><a href="../HTML/studentexperience.html">Student Experiences</a></li>
+			<li><a href="../HTML/contact.html">Contact Information</a></li>
 		</ul>
   </nav>
-	<h1>Computer Forensics</h1>
-	<section>
-		<h1>Track Overview</h1>
-		<p> Computer Forensics (CF) is a discipline of forensic science that combines elements of law 
-			and information technology to collect and analyze data from computer systems, networks, wireless 
-			communications, and storage devices in a way that is admissible as evidence in a court of law. 
-			CF is also the process of using scientific knowledge for collecting, analyzing, and presenting 
-			digital evidence to the courts. With the increasing use of computers to commit crimes and 
-			growing demand for computer-based data in civil proceedings, a need has rapidly developed 
-			for forensic experts to extract useful information from computer evidence.
-		</p>
-		<h1>Salary Information</h1>
-		<p>Entry Level Position: $63,000-$90,000 per year <br><br>
-			Average Salary: $44,000-$150,000 per year
-		</p>
-	</section>
+	<main>
+		<h1>Computer Forensics</h1>
+			<section>
+				<h1>Track Overview</h1>
+				<p> Computer Forensics (CF) is a discipline of forensic science that combines elements of law 
+					and information technology to collect and analyze data from computer systems, networks, wireless 
+					communications, and storage devices in a way that is admissible as evidence in a court of law. 
+					CF is also the process of using scientific knowledge for collecting, analyzing, and presenting 
+					digital evidence to the courts. With the increasing use of computers to commit crimes and 
+					growing demand for computer-based data in civil proceedings, a need has rapidly developed 
+					for forensic experts to extract useful information from computer evidence.
+				</p>
+
+				<h1>Salary Information</h1>
+				<p>Entry Level Position: $63,000-$90,000 per year <br><br>
+					Average Salary: $44,000-$150,000 per year
+				</p>
+
+				<h1>Track Courses</h1>
+				<h2>Choose 5 of the following</h2>
+				<ul>
+					<li>SOCIOL 104 Intro to Criminal Justice</li>
+					<li>IT 220 Computer Forensics I</li>
+					<li>IT 221 Computer Forensics II</li>
+					<li>IT 420 Network and Mobile Forensics</li>
+					<li>IT 421 Malware Analysis</li>
+					<li>SOCIOL 364 Cyber Crime</li>
+				</ul>
+			</section>
+	</main>
 </body>
 <footer>
 	<p>&copy; 2022 Group 9</p>
