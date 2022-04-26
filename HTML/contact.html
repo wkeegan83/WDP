@@ -40,8 +40,9 @@
 			<li><a href="../HTML/contact.html" class="current">Contact Information</a></li>
 		</ul>
   </nav>
-	<h1>Contact Us</h1>
+	
 	<main>
+		<h1>Contact Us</h1>
 		<form action="register_account.html" method="get"
         		name="registration_form" id="registration_form">
     			<fieldset>
@@ -66,6 +67,16 @@
 		</main>
 </body>
 <footer>
+	<p class="right">Click on the dropdown button to translate.</p>
+	<div id="google_translate_element"></div>
+	<script type="text/javascript"> 
+		function googleTranslateElementInit() {
+		new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+		}
+	</script>
+
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 	<p>&copy; 2022 Group 9</p>
 	<p>100 William T. Morrissey Blvd. Boston, MA 02125-3393 | Tel: 617.287.500</p>
 </footer>
