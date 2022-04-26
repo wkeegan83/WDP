@@ -86,6 +86,13 @@ main h2 {
 	font-size: 100%;
 	padding: .5em 0 .25em 1em;
 }
+main form{
+	padding-top: 2em;
+	padding-bottom: 3em;
+}
+main a{
+	color: goldenrod;
+}
 main p.centered {
 	text-align: center;
 	padding-bottom: .5em;
@@ -115,10 +122,10 @@ main th, main td{
 
 /* the styles for the section */
 section {
-	width: 50%;
+	width: 40%;
 	float: left;
 	padding: .5em 0;
-	/*float: left;*/
+	
 }
 section h1 {
 	font-size: 150%;
@@ -158,10 +165,17 @@ section th, section td{
 	border: 1px solid black; /* inside border*/
 	padding: .2em .7em .2em .7em;
 }
+section blockquote{
+	padding: .5em 0 .5em 1em;
+}
 
 /* the styles for the aside */
 aside{
+	width: 40%;
 	float: right;
+	text-align: left;
+	margin-right: 10%;
+	padding: .5em 0;
 }
 aside h1 {
 	font-size: 150%;
@@ -169,19 +183,23 @@ aside h1 {
 	border: none;
 	padding: .5em 1em .25em .5em;
 	margin: 0;
-	float: right;
+
 }aside h2 {
 	color: goldenrod; /* Normal secondary page sections*/
 	font-size: 100%;
 	padding: .5em 0 .25em 1em;
 }
 aside ul {
-	padding: 3em 0 .25em 0em;
 	list-style-type: circle;
-	float: right;
 }
 aside li {
 	padding-bottom: .35em;
+}
+aside figure{
+	padding-right: 1%;
+}
+aside img{
+	padding-right: 20em;
 }
 
 /* the styles for the table */
@@ -258,6 +276,10 @@ footer p {
 	color: white;
 	padding: .5em 0;
 }
+footer p.right{
+	text-align: left;
+	color: goldenrod;
+}
 
 /* media query less than 810px */
 @media only screen and (max-width: 810px){
@@ -265,7 +287,16 @@ footer p {
 		font-size: 95%;
 	}
 	section{
-		font-size: 100%;
+		font-size: 95%;
+	}
+	aside h1{
+		font-size: 95%;
+	}
+	aside h2{
+		font-size: 85%;
+	}
+	aside{
+		font-size: 95%;
 	}
 	#nav_menu{
 		font-size: 90%;
@@ -289,8 +320,12 @@ footer p {
 		align-content: center;
 	}
 	section{
-		float: none;
-		width: 95%;
+		float: left;
+		width: 40%;
+	}
+	aside{
+		float: right;
+		width: 40%;
 	}
 }
 
