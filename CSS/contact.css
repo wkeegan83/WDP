@@ -1,0 +1,256 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: white;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: #226597;
+	color: #F3F9FB;
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+em{
+	color: goldenrod;
+}
+/* the styles for the header */
+header img {
+	width: 100%;
+  align-content: center;
+	float: left;
+}
+
+/* hide the #mobile_menu */
+#mobile_menu{
+	display: none;
+}
+
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+	width: 20%;
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #113F67;
+    color: #F3F9FB;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: #87C0CD;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+	width: 100%;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* the styles for the main */
+main {
+	padding: .5em 0;
+	clear: both;
+}
+
+/* the styles for the section */
+section {
+	width: 725px;
+	float: center;
+	padding: 0 20px 20px;
+}
+section h1 {
+	color: #800000;
+	font-size: 150%;
+	padding-top: .5em;
+	margin: 0;
+	text-align: center;
+}
+section h2 {
+	float: center;
+	text-align: center;
+}
+section h1.spaceafter {
+	margin-bottom: .25em;
+}
+section p {
+	padding-bottom: .5em;
+}
+section blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+section ul {
+	padding: .25em 0 .5em 0;
+}
+section li {
+	padding-bottom: .35em;
+}
+/* the styles for the image swap list */ 
+section #image_list li {
+	padding: 2px;
+	display: inline;
+}
+section #image_list a {
+	border:none;
+}
+section #image_list ul {
+	padding-bottom: .25em;
+	text-decoration: none;
+}
+/* the styles for the image rollover */
+section #image_rollovers {
+	list-style: none;
+}
+
+/* the styles for the form */
+fieldset {
+	margin-top: 0;
+	margin-bottom: .5em;
+	padding: .5em 1em;
+	clear: both;
+}
+legend {
+	color: goldenrod;
+	font-weight: bold;
+	font-size: 100%;
+	margin-bottom: .5em;
+}
+label {
+	float: left;
+	width: 12em;
+	text-align: right;
+}
+label, input, select {
+font-size: 90%;
+}
+input, select {
+	width: 15em;
+	margin-left: .5em;
+	margin-bottom: .5em;
+}
+input:required {
+border: 2px solid red;
+color: #800000;
+}
+input:valid {
+border: 1px solid black;
+}
+input:invalid {
+box-shadow: none;
+border: 2px solid red;
+color: #800000;
+}
+br {
+	clear: both;
+}
+#radio label{
+float: none;
+}
+#radio input{
+width: auto;
+margin-left: 3em;
+}
+#buttons input {
+width: 10em;
+background-color: #87C0CD;
+color: black;
+}
+
+/* the styles for the footer */
+footer {
+	background-color: #226597;
+  color: white;
+	clear: both;
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: .5em 0;
+}
+footer p.right{
+	text-align: left;
+	color: goldenrod;
+}
+
+/* media query less than 810px */
+@media only screen and (max-width: 810px){
+	section h1{
+		font-size: 95%;
+	}
+	section{
+		font-size: 95%;
+	}
+	aside h1{
+		font-size: 95%;
+	}
+	aside h2{
+		font-size: 85%;
+	}
+	aside{
+		font-size: 95%;
+	}
+	#nav_menu{
+		font-size: 90%;
+	}
+}
+
+/* media query less than 735px */
+@media only screen and (max-width: 735px){
+	#nav_menu{
+		display: none;
+	}
+	#mobile_menu{
+		display: block;
+	}
+	.slicknav_menu{ background-color: #113F67 !important;}
+	header img{
+		float: none;
+		max-width: 100%;
+	}
+	header{
+		align-content: center;
+	}
+	section{
+		float: left;
+		width: 40%;
+	}
+	aside{
+		float: right;
+		width: 40%;
+	}
+}
+
+/* media query less than 415px */
+@media only screen and (max-width: 415px){
+	body{
+		font-size: 90%;
+	}
+}
