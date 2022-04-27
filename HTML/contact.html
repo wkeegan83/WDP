@@ -7,10 +7,11 @@
   <title>WDP Draft</title>
   <link rel="shortcut icon" href="../Images/umb_logo.jpg">
   <link rel="stylesheet" href="../CSS/normalize.css">
-	<link rel="stylesheet" href="../CSS/secondary.css">
+	<link rel="stylesheet" href="../CSS/contact.css">
 	<link rel="stylesheet" href="../CSS/slicknav.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="../js/jquery.slicknav.min.js"></script>
+	<script src="../js/image_swap.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
@@ -40,10 +41,24 @@
 			<li><a href="../HTML/contact.html" class="current">Contact Information</a></li>
 		</ul>
   </nav>
-	
+ 
 	<main>
-		<h1>Contact Us</h1>
-		<form action="register_account.html" method="get"
+		<section>
+			<h1>Meet the Professors</h1>
+			<ul id="image_list">
+			  <li><a href="../images/amanda.jpg" title="Amanda Potasnik"><img src="../images/amanda1.jpg" alt=""></a> </li>
+			  <li><a href="../images/kim.jpg" title="Andrew Ross Sorkn"><img src="../images/kim1.jpg" alt=""></a> </li>
+			  <li><a href="../images/frankel.jpg" title="Amy Cha"><img src="../images/frankel1.jpg" alt=""></a> </li>
+			  <li><a href="../images/liang.jpg" title="Scot Sampson"><img src="../images/liang1.jpg" alt=""></a></li>
+			  <li><a href="../images/cheung.jpg" title="Scot Sampson"><img src="../images/cheung1.jpg" alt=""></a></li>
+			  <li><a href="../images/hoffman.jpg" title="Glenn Hoffman"><img src="../images/hoffman1.jpg" alt=""></a></li>
+			</ul>
+			<h2 id="caption">Glenn Hoffman</h2>
+			<p><img id="image" src="../images/hoffman.jpg" alt=""></p>
+		</section>
+		<article>
+			<h1>Meet with an Advisor</h1>
+			<form action="register_account.html" method="get"
         		name="registration_form" id="registration_form">
     			<fieldset>
 						<legend> Your Contact Information</legend>
@@ -64,7 +79,32 @@
 						<input type="reset" id="reset" value="Reset Fields"><br>
 					</fieldset>
 				</form>
-		</main>
+		</article>
+		<article>
+			<h1>Contact Us</h1>
+			<form action="register_account.html" method="get"
+        		name="registration_form" id="registration_form">
+    			<fieldset>
+						<legend> Your Contact Information</legend>
+						<label for="email">E-Mail:</label>
+						<input type="email" name="email" id="email" autofocus required><br>
+						<label for="first_name">First Name:</label>
+						<input type="text" name="first_name" id="first_name" required><br>
+						<label for="last_name">Last Name:</label>
+						<input type="text" name="last_name" id="last_name" required><br>
+						<label for="phone">Phone Number:</label>
+						<input type="tel" name="phone" id="phone" placeholder="999-999-9999" 
+											pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-999 format"><br>
+					</fieldset>
+					<fieldset id="buttons">
+						<legend>Submit Your Information</legend>
+						<label>&nbsp;</label>
+						<input type="submit" id="submit" value="Submit">
+						<input type="reset" id="reset" value="Reset Fields"><br>
+					</fieldset>
+				</form>
+		</article>
+	</main>
 </body>
 <footer>
 	<p class="right">Click on the dropdown button to translate.</p>
