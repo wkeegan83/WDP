@@ -7,15 +7,21 @@
 		<title>Group 9 WDP</title>
 		<link rel="shortcut icon" href="..\Images\umb_logo.jpg">
 		<link rel="stylesheet" href="..\CSS\main.css">
-		<script src="js/certile.min.js"></script>
-	
+		<link rel="stylesheet" href="../CSS/slicknav.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="../js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+			});
+		</script>
 </head>
 
 <body>
 	<header>
 		<a href="/HTML/home.html"><img src="..\Images\Banner.jpg" alt="home"></a>
 	</header>
-
+	<nav id="mobile_menu"></nav>
 	<nav id="nav_menu">
 		<ul>
 			<li ><a href="/HTML/home.html" class="current">Home</a></li>
@@ -35,65 +41,65 @@
 			<h1> Your Career in Information Technology Starts Here </h1>
 			<p>Prepare yourself to meet the rising demand for highly skilled information technology professionals with UMass Boston's Bachelor of Science in Information Technology, College of Management. Offered 100% online or as a mix of online and on-campus courses, this flexible and affordable BSIT@CM program will position you for success in today's increasingly technical and IT-centric world.</p>
 	</section>
+<aside>
+	<div class="certificationTiles">
+		<article class="certTile background">
+		<div class="top">
+		<div class="icon">
+			<img style="width: 110px" src="..\Images\System.jpg" alt="iconCloudPlus" title="iconCloudPlus" data-displaymode="Original">
+		</div>
+		</div>
+		<div class="content">
+					<h2>System Administration </h2>
+					<p>System Administration (SA) focuses on the deployment and maintenance of computer systems and networks.</p>
+					<h3>Concentration</h3>
+				</div>
+			</article>
+			<article class="certTile background">
+				<div class="top">
+					<div class="icon">
 
-<div class="certificationTiles">
-	<article class="certTile background">
-	<div class="top">
-	<div class="icon">
-		<img style="width: 110px" src="..\Images\System.jpg" alt="iconCloudPlus" title="iconCloudPlus" data-displaymode="Original">
+						<img style="width: 110px" src="..\Images\Forensics.jpg" alt="iconCloudPlus" title="iconCloudPlus" data-displaymode="Original">
+
+					</div>
+				</div>
+				<div class="content">
+					<h2>Computer Forensics</h2>
+					<p>Computer Forensics (CF) is a discipline of forensic science that combines elements of law and information technology to collect and analyze data from computer systems, networks, wireless communications, and storage devices in a way that is admissible as evidence in a court of law.</p>
+					<h3>Concentration</h3>
+				</div>
+			</article>
+			<article class="certTile background">
+				<div class="top">
+					<div class="icon">
+
+						<img style="width: 110px" src="..\Images\Business.jpg" alt="iconCloudPlus" title="iconCloudPlus" data-displaymode="Original">
+
+					</div>
+				</div>
+				<div class="content">
+					<h2>Business Intelligence</h2>
+					<p>Business Intelligence (BI) is the technology that companies such as Amazon.com and Google use to take advantage of the enormous amount of data they collect and analyze.</p>
+					<h3>Concentration</h3>
+				</div>
+			</article>
+			<article class="certTile background">
+				<div class="top">
+					<div class="icon">
+
+						<img style="width: 110px" src="..\Images\Architecture.png" alt="iconCloudPlus" title="iconCloudPlus" data-displaymode="Original">
+
+					</div>
+				</div>
+				<div class="content">
+					<h2>Information Architecture</h2>
+					<p>Information Architecture (IA) is the discipline of designing and implementing information systems that support and enable business strategies and operations. </p>
+					<h3>Concentration</h3>
+
+				</div>
+			</article>
 	</div>
-	</div>
-	<div class="content">
-				<h2>System Administration </h2>
-				<p>System Administration (SA) focuses on the deployment and maintenance of computer systems and networks.</p>
-				<h3>Concentration</h3>
-			</div>
-		</article>
-		<article class="certTile background">
-			<div class="top">
-				<div class="icon">
-
-					<img style="width: 110px" src="..\Images\Forensics.jpg" alt="iconCloudPlus" title="iconCloudPlus" data-displaymode="Original">
-
-				</div>
-			</div>
-			<div class="content">
-				<h2>Computer Forensics</h2>
-				<p>Computer Forensics (CF) is a discipline of forensic science that combines elements of law and information technology to collect and analyze data from computer systems, networks, wireless communications, and storage devices in a way that is admissible as evidence in a court of law.</p>
-				<h3>Concentration</h3>
-			</div>
-		</article>
-		<article class="certTile background">
-			<div class="top">
-				<div class="icon">
-
-					<img style="width: 110px" src="..\Images\Business.jpg" alt="iconCloudPlus" title="iconCloudPlus" data-displaymode="Original">
-
-				</div>
-			</div>
-			<div class="content">
-				<h2>Business Intelligence</h2>
-				<p>Business Intelligence (BI) is the technology that companies such as Amazon.com and Google use to take advantage of the enormous amount of data they collect and analyze.</p>
-				<h3>Concentration</h3>
-			</div>
-		</article>
-		<article class="certTile background">
-			<div class="top">
-				<div class="icon">
-
-					<img style="width: 110px" src="..\Images\Architecture.png" alt="iconCloudPlus" title="iconCloudPlus" data-displaymode="Original">
-
-				</div>
-			</div>
-			<div class="content">
-				<h2>Information Architecture</h2>
-				<p>Information Architecture (IA) is the discipline of designing and implementing information systems that support and enable business strategies and operations. </p>
-				<h3>Concentration</h3>
-
-			</div>
-		</article>
-</div>
-
+</aside>
 
 
 <div class="threecolumnsblue">
@@ -133,6 +139,7 @@
 					<p>You could become a potential employee at one of these companies</p>
 					</div>
 	</section h2>	
+</body>
 </main>
 <footer>
 	<p class="right">Click on the dropdown button to translate.</p>

@@ -266,3 +266,94 @@ footer p {
 	color: #F3F9FB;
 	padding: .5em 0;
 }
+
+/* media query less than 1020px */
+@media only screen and (max-width: 1020px){
+    div article{
+        font-size: 90%;
+}
+
+/* media query less than 923px */
+@media only screen and (max-width: 923px){
+    div article{
+        font-size: 85%;
+    }
+}
+
+/* media query less than 836px */
+@media only screen and (max-width: 836px){
+	section h1{
+		font-size: 120%;
+	}
+    div article{
+        font-size: 80%;
+    }
+    header img{
+        align-content: center;
+    }
+	section p{
+		font-size: 90%;
+	}
+	aside h1{
+		font-size: 95%;
+	}
+	aside h2{
+		font-size: 85%;
+	}
+	aside{
+		font-size: 95%;
+	}
+	#nav_menu{
+		font-size: 90%;
+	}
+}
+
+/* media query less than 745px */
+@media only screen and (max-width: 745px){
+	#nav_menu{
+		display: none;
+	}
+	#mobile_menu{
+		display: block;
+	}
+	.slicknav_menu{ background-color: #113F67 !important;}
+	header img{
+		float: none;
+		max-width: 100%;
+	}
+	header{
+		align-content: center;
+	
+}
+
+/* media query less than 540px */
+@media only screen and (max-width: 540px){
+	body{
+		font-size: 90%;
+	}
+    .certificationTiles .certTile .icon {     /*create the circle white space as well as give it a shadow for the borders*/
+    background-color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 80px;
+    box-shadow: 2px 0 13px -5px black;
+    height: 100px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 100px;
+    z-index: 1; }
+    
+.certificationTiles .certTile .icon img {      /* round the pictures*/
+    border-radius: 50%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10px; }
+}
