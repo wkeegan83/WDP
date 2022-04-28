@@ -217,10 +217,10 @@ section p{
 }
 @media only screen and (min-width:801px){
 
-.three-column .content-box{
-    width: 97%;
-    max-width: 960;
-    flex-direction:column}
+    .three-column .content-box{
+        width: 97%;
+        max-width: 960;
+        flex-direction:column}
 }
 
 .three-column h5{
@@ -266,6 +266,7 @@ footer p {
 	color: #F3F9FB;
 	padding: .5em 0;
 }
+
 
 /* media query less than 1020px */
 @media only screen and (max-width: 1020px){
@@ -323,7 +324,7 @@ footer p {
 	}
 	header{
 		align-content: center;
-	
+    }
 }
 
 /* media query less than 540px */
@@ -344,16 +345,18 @@ footer p {
     right: 0;
     top: 60px;
     width: 100px;
-    z-index: 1; }
+    z-index: 1;
+    }
     
-.certificationTiles .certTile .icon img {      /* round the pictures*/
-    border-radius: 50%;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    opacity: 1;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 10px; }
+    .certificationTiles .certTile .icon img {      /* round the pictures*/
+        border-radius: 50%;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        opacity: 1;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 10px; 
+    }
 }

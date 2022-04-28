@@ -79,23 +79,37 @@ main {
 	padding: .5em 0;
 	clear: both;
 }
+main h1 {
+	padding: .5em 0 .25em 1em;
+	margin: 0;
+	border-bottom: 2px solid #F3F9FB; /* adds the white border below the heading */
+}
 
 /* the styles for the section */
 section {
-	width: 725px;
-	float: center;
+	width: 100%;
 	padding: 0 20px 20px;
 }
-section h1 {
-	color: #800000;
+section ul {
 	font-size: 150%;
-	padding-top: .5em;
+	color: goldenrod; /* Track page sections */
+	border: none;
+	padding: .5em 1em .25em .5em;
 	margin: 0;
-	text-align: center;
+}
+section ul li a{
+	margin-left: 7%;
 }
 section h2 {
 	float: center;
 	text-align: center;
+	color: goldenrod;
+}
+section h5{
+	margin-left: 35%;
+}
+section p img{
+	float: left;
 }
 section h1.spaceafter {
 	margin-bottom: .25em;
@@ -128,6 +142,12 @@ section #image_list ul {
 /* the styles for the image rollover */
 section #image_rollovers {
 	list-style: none;
+}
+
+/* the styles for the article*/
+article h1{
+	clear: both;
+	border: none;
 }
 
 /* the styles for the form */

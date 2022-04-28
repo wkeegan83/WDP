@@ -16,10 +16,14 @@ $(document).ready(function() {
 		var caption = $(this).attr("title");
 		$("#caption").text(caption);
 
-		var content = $(this).attr("content");
-		$("#content").text(content);
+		//swap email
+		var email = $(this).attr("email");
+		$("#email").text(email);
 
-
+		//swap phone
+		var phone = $(this).attr("phone");
+		$("#phone").text(phone);
+		
 				
 		// cancel the default action of the link
 	    evt.preventDefault();  // jQuery method that's cross-browser compatible
