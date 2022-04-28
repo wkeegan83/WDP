@@ -11,10 +11,15 @@ $(document).ready(function() {
 		// swap image
 		var imageURL = $(this).attr("href");
 		$("#image").attr("src", imageURL);
-		
+
 		//swap caption
 		var caption = $(this).attr("title");
 		$("#caption").text(caption);
+
+		var content = $(this).attr("content");
+		$("#content").text(content);
+
+
 				
 		// cancel the default action of the link
 	    evt.preventDefault();  // jQuery method that's cross-browser compatible
