@@ -84,6 +84,9 @@ main h1 {
 	margin: 0;
 	border-bottom: 2px solid #F3F9FB; /* adds the white border below the heading */
 }
+main h1.borderless{
+	border: none;
+}
 
 /* the styles for the section */
 section {
