@@ -23,6 +23,14 @@ $(document).ready(function() {
 		//swap phone
 		var phone = $(this).attr("phone");
 		$("#phone").text(phone);
+
+		//swap office
+		var office = $(this).attr("office");
+		$("#office").text(office);
+
+		//swap website
+		var site = $(this).attr("site");
+		$("#site").text(site);
 		
 				
 		// cancel the default action of the link

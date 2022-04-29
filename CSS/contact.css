@@ -107,6 +107,7 @@ section h2 {
 }
 section h5{
 	margin-left: 35%;
+	padding-bottom: 1em;
 }
 section p img{
 	float: left;
@@ -148,6 +149,20 @@ section #image_rollovers {
 article h1{
 	clear: both;
 	border: none;
+}
+
+/* the styles for the table */
+table{
+	border: 1px solid black; /* outside border*/
+	border-collapse: collapse;
+	margin: 0 1.25em;
+}
+th, td{
+	border: 1px solid black; /* inside border*/
+	padding: .2em .7em .2em .7em;
+}
+tr a{
+	color: goldenrod;
 }
 
 /* the styles for the form */
