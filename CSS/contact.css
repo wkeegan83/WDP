@@ -101,7 +101,6 @@ section ul li a{
 	margin-left: 7%;
 }
 section h2 {
-	float: center;
 	text-align: center;
 	color: goldenrod;
 }
@@ -111,6 +110,9 @@ section h5{
 }
 section p img{
 	float: left;
+}
+section figure img{
+	padding-left: 12%;
 }
 section h1.spaceafter {
 	margin-bottom: .25em;

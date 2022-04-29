@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDP Draft</title>
+  <link rel="shortcut icon" href="../Images/umb_logo.jpg">
+  <link rel="stylesheet" href="../CSS/normalize.css">
+	<link rel="stylesheet" href="../CSS/contact.css">
+	<link rel="stylesheet" href="../CSS/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="../js/jquery.slicknav.min.js"></script>
+	<script src="../js/image_swap.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+</head>
+
+<header>
+	<a href="../HTML/home.html"><img src="../Images/UMass-Boston_aerial.jpg" alt="home"></a>
+</header>
+
+<body>
+	<nav id="mobile_menu"></nav>
+  <nav id="nav_menu">
+		<ul>
+			<li ><a href="../HTML/home.html">Home</a></li>
+			<li><a href="../HTML/academics.html">Academics</a>
+					<ul>
+						<li><a href="../HTML/forensics.html">Computer Forensics</a></li>
+						<li><a href="../HTML/businessintel.html">Business Intelligence</a></li>
+						<li><a href="../HTML/sysadmin.html">System Administration</a></li>
+						<li><a href="../HTML/infoarch.html">Information Architecture</a></li>
+					</ul>
+	  	</li>
+      <li><a href="../HTML/prospects.html">Prospects</a></li>
+			<li><a href="../HTML/studentexperience.html">Student Experiences</a></li>
+			<li><a href="../HTML/contact.html" class="current">Contact Information</a></li>
+		</ul>
+  </nav>
+ 
+	<main>
+		<h1>Submission Success!</h1>
+		<section>
+      <h2>Thank you for submitting your information</h2>
+      <figure><img src="../Images/umb_logo2.jpg" alt=""></figure>
+		</section>
+	</main>
+</body>
+<footer>
+	<p class="right">Click on the dropdown button to translate.</p>
+	<div id="google_translate_element"></div>
+	<script type="text/javascript"> 
+		function googleTranslateElementInit() {
+		new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+		}
+	</script>
+
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+	<p>&copy; 2022 Group 9</p>
+	<p>100 William T. Morrissey Blvd. Boston, MA 02125-3393 | Tel: 617.287.500</p>
+</footer>
+</html>
