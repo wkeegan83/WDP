@@ -178,6 +178,9 @@ fieldset {
 	padding: .5em 1em;
 	clear: both;
 }
+fieldset input{
+	color: black;
+}
 legend {
 	color: goldenrod;
 	font-weight: bold;
