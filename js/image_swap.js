@@ -16,14 +16,6 @@ $(document).ready(function() {
 		var caption = $(this).attr("title");
 		$("#caption").text(caption);
 
-		//swap email
-		var email = $(this).attr("email");
-		$("#email").text(email);
-
-		//swap phone
-		var phone = $(this).attr("phone");
-		$("#phone").text(phone);
-
 		//swap office
 		var office = $(this).attr("office");
 		$("#office").text(office);
@@ -31,7 +23,6 @@ $(document).ready(function() {
 		//swap website
 		var site = $(this).attr("site");
 		$("#site").text(site);
-		
 				
 		// cancel the default action of the link
 	    evt.preventDefault();  // jQuery method that's cross-browser compatible
