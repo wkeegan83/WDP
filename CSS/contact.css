@@ -83,6 +83,7 @@ main h1 {
 	padding: .5em 0 .25em 1em;
 	margin: 0;
 	border-bottom: 2px solid #F3F9FB; /* adds the white border below the heading */
+	text-align: center;
 }
 main h1.borderless{
 	border: none;
@@ -101,7 +102,7 @@ section ul {
 	margin: 0;
 }
 section ul li a{
-	margin-left: 7%;
+	margin-left: 2%;
 }
 section h2 {
 	text-align: center;
@@ -135,7 +136,7 @@ section li {
 }
 /* the styles for the image swap list */ 
 section #image_list li {
-	padding: 2px;
+	padding: 3.5px;
 	display: inline;
 }
 section #image_list a {
